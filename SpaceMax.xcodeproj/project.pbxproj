@@ -14,6 +14,7 @@
 		53874E5529EEF29900A7CC35 /* SpaceMaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53874E5429EEF29900A7CC35 /* SpaceMaxTests.swift */; };
 		53874E5F29EEF29A00A7CC35 /* SpaceMaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53874E5E29EEF29A00A7CC35 /* SpaceMaxUITests.swift */; };
 		53874E6129EEF29A00A7CC35 /* SpaceMaxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53874E6029EEF29A00A7CC35 /* SpaceMaxUITestsLaunchTests.swift */; };
+		53874E7329EF065300A7CC35 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 53874E7229EF065300A7CC35 /* Apollo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53874E7329EF065300A7CC35 /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = SpaceMax;
+			packageProductDependencies = (
+				53874E7229EF065300A7CC35 /* Apollo */,
+			);
 			productName = SpaceMax;
 			productReference = 53874E4029EEF29800A7CC35 /* SpaceMax.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 53874E3729EEF29800A7CC35;
+			packageReferences = (
+				53874E7129EF065300A7CC35 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = 53874E4129EEF29800A7CC35 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -422,8 +430,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,8 +457,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -577,6 +583,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		53874E7129EF065300A7CC35 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		53874E7229EF065300A7CC35 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53874E7129EF065300A7CC35 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 53874E3829EEF29800A7CC35 /* Project object */;
 }
