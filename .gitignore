@@ -2,6 +2,19 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
+.DS_Store
+
+# GraphQL
+schema.graphqls
+apollo-ios-cli
+
+# Node packages
+# PS.: they are ignored because they are only used 
+# for downloading the GraphQL schema 
+package.json
+package-lock.json
+node_modules/
+
 ## User settings
 xcuserdata/
 
