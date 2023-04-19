@@ -2,10 +2,10 @@
   "schemaNamespace" : "SpaceMax",
   "input" : {
     "operationSearchPaths" : [
-      "**/*.graphql"
+      "./**/*.graphql"
     ],
     "schemaSearchPaths" : [
-      "**/*.graphqls"
+      "./**/*.graphqls"
     ]
   },
   "output" : {
@@ -14,7 +14,7 @@
       }
     },
     "schemaTypes" : {
-      "path" : "./SpaceMax",
+      "path" : "./Generated",
       "moduleType" : {
         "embeddedInTarget" : {
           "name" : "SpaceMax"
