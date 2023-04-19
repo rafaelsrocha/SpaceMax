@@ -7,6 +7,7 @@
 # GraphQL
 schema.graphqls
 apollo-ios-cli
+SpaceMax/Core/Networking/GraphQL/SpaceX/Generated
 
 # Node packages
 # PS.: they are ignored because they are only used 

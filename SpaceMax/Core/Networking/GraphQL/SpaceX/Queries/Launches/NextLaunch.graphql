@@ -1,0 +1,28 @@
+query NextLaunch {
+  launchNext {
+    launch_date_utc
+    launch_site {
+      site_name
+      site_name_long
+    }
+    mission_name
+    rocket {
+      rocket {
+        diameter {
+          meters
+        }
+        height {
+          meters
+        }
+        mass {
+          kg
+        }
+        name
+        payload_weights {
+          kg
+        }
+        stages
+      }
+    }
+  }
+}

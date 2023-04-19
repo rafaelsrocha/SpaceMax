@@ -40,6 +40,7 @@ setup:
 	$(MAKE) install-tools
 	$(MAKE) init-graphql-codegen-config
 	$(MAKE) fetch-graphql-schema
+	$(MAKE) generate-graphql-code
 
 ##
 # `install-tools` command

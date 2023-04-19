@@ -1,12 +1,25 @@
-# SpaceMAX
+# SpaceMAX 🚀
 
 It's a SpaceX-based app I'm creating for fun while trying out some programming concepts.
 
+## Building the app
+
+Before building the app, you need to run `make setup` on the project's root folder. It'll install the needed dependencies, set up the environment, download the `schema.graphqls` file and generate the GraphQL operation and schema files. After that, you should be good to go.
+
+## Generating GraphQL models
+
+After creating your `.graphql` file containing your query, run `make generate-graphql-code` to generate the referent files.
+
 ## Features
 
-[ ] Upcoming launches
-[ ] Historical data
+[ ] Next launch
+[ ] Launches
 [ ] Rockets info
+[ ] Light/dark mode
+
+### Next launch
+
+As explained here https://medium.com/open-graphql/launching-spacex-graphql-api-b3d7029086e0
 
 ## Roadmap
 

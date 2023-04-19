@@ -8,8 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		5335E13229F034C800A06BBA /* schema.graphqls in Resources */ = {isa = PBXBuildFile; fileRef = 5335E13029F034C800A06BBA /* schema.graphqls */; };
-		5335E13329F034C800A06BBA /* apollo-codegen-config.json in Resources */ = {isa = PBXBuildFile; fileRef = 5335E13129F034C800A06BBA /* apollo-codegen-config.json */; };
 		5335E13A29F0388C00A06BBA /* NextLaunch.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 5335E13929F0388C00A06BBA /* NextLaunch.graphql */; };
+		5335E17E29F045F900A06BBA /* SpaceXGQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5335E17D29F045F900A06BBA /* SpaceXGQL.swift */; };
+		5353F78629F0745F00182EBE /* NextLaunchQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353F77629F0745F00182EBE /* NextLaunchQuery.graphql.swift */; };
+		5353F78729F0745F00182EBE /* SpaceX.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353F77729F0745F00182EBE /* SpaceX.graphql.swift */; };
+		5353F78829F0745F00182EBE /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353F77A29F0745F00182EBE /* Date.swift */; };
+		5353F78929F0745F00182EBE /* Launch.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353F77C29F0745F00182EBE /* Launch.graphql.swift */; };
+		5353F78A29F0745F00182EBE /* Rocket.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353F77D29F0745F00182EBE /* Rocket.graphql.swift */; };
+		5353F78B29F0745F00182EBE /* Distance.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353F77E29F0745F00182EBE /* Distance.graphql.swift */; };
+		5353F78C29F0745F00182EBE /* RocketPayloadWeight.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353F77F29F0745F00182EBE /* RocketPayloadWeight.graphql.swift */; };
+		5353F78D29F0745F00182EBE /* LaunchRocket.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353F78029F0745F00182EBE /* LaunchRocket.graphql.swift */; };
+		5353F78E29F0745F00182EBE /* Query.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353F78129F0745F00182EBE /* Query.graphql.swift */; };
+		5353F78F29F0745F00182EBE /* LaunchSite.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353F78229F0745F00182EBE /* LaunchSite.graphql.swift */; };
+		5353F79029F0745F00182EBE /* Mass.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353F78329F0745F00182EBE /* Mass.graphql.swift */; };
+		5353F79129F0745F00182EBE /* SchemaConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353F78429F0745F00182EBE /* SchemaConfiguration.swift */; };
+		5353F79229F0745F00182EBE /* SchemaMetadata.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353F78529F0745F00182EBE /* SchemaMetadata.graphql.swift */; };
 		53874E4429EEF29800A7CC35 /* SpaceMaxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53874E4329EEF29800A7CC35 /* SpaceMaxApp.swift */; };
 		53874E4629EEF29800A7CC35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53874E4529EEF29800A7CC35 /* ContentView.swift */; };
 		53874E4829EEF29900A7CC35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53874E4729EEF29900A7CC35 /* Assets.xcassets */; };
@@ -39,8 +52,21 @@
 
 /* Begin PBXFileReference section */
 		5335E13029F034C800A06BBA /* schema.graphqls */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.graphqls; sourceTree = "<group>"; };
-		5335E13129F034C800A06BBA /* apollo-codegen-config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "apollo-codegen-config.json"; sourceTree = "<group>"; };
 		5335E13929F0388C00A06BBA /* NextLaunch.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NextLaunch.graphql; sourceTree = "<group>"; };
+		5335E17D29F045F900A06BBA /* SpaceXGQL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXGQL.swift; sourceTree = "<group>"; };
+		5353F77629F0745F00182EBE /* NextLaunchQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextLaunchQuery.graphql.swift; sourceTree = "<group>"; };
+		5353F77729F0745F00182EBE /* SpaceX.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceX.graphql.swift; sourceTree = "<group>"; };
+		5353F77A29F0745F00182EBE /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		5353F77C29F0745F00182EBE /* Launch.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Launch.graphql.swift; sourceTree = "<group>"; };
+		5353F77D29F0745F00182EBE /* Rocket.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rocket.graphql.swift; sourceTree = "<group>"; };
+		5353F77E29F0745F00182EBE /* Distance.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distance.graphql.swift; sourceTree = "<group>"; };
+		5353F77F29F0745F00182EBE /* RocketPayloadWeight.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocketPayloadWeight.graphql.swift; sourceTree = "<group>"; };
+		5353F78029F0745F00182EBE /* LaunchRocket.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchRocket.graphql.swift; sourceTree = "<group>"; };
+		5353F78129F0745F00182EBE /* Query.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.graphql.swift; sourceTree = "<group>"; };
+		5353F78229F0745F00182EBE /* LaunchSite.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchSite.graphql.swift; sourceTree = "<group>"; };
+		5353F78329F0745F00182EBE /* Mass.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mass.graphql.swift; sourceTree = "<group>"; };
+		5353F78429F0745F00182EBE /* SchemaConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaConfiguration.swift; sourceTree = "<group>"; };
+		5353F78529F0745F00182EBE /* SchemaMetadata.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaMetadata.graphql.swift; sourceTree = "<group>"; };
 		53874E4029EEF29800A7CC35 /* SpaceMax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceMax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53874E4329EEF29800A7CC35 /* SpaceMaxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceMaxApp.swift; sourceTree = "<group>"; };
 		53874E4529EEF29800A7CC35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,9 +124,10 @@
 		5335E12F29F034C800A06BBA /* SpaceX */ = {
 			isa = PBXGroup;
 			children = (
+				5353F77329F0745F00182EBE /* Generated */,
 				5335E13429F0355200A06BBA /* Queries */,
 				5335E13029F034C800A06BBA /* schema.graphqls */,
-				5335E13129F034C800A06BBA /* apollo-codegen-config.json */,
+				5335E17D29F045F900A06BBA /* SpaceXGQL.swift */,
 			);
 			path = SpaceX;
 			sourceTree = "<group>";
@@ -127,6 +154,67 @@
 				5335E12F29F034C800A06BBA /* SpaceX */,
 			);
 			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		5353F77329F0745F00182EBE /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				5353F77429F0745F00182EBE /* Operations */,
+				5353F77729F0745F00182EBE /* SpaceX.graphql.swift */,
+				5353F77829F0745F00182EBE /* Schema */,
+			);
+			name = Generated;
+			path = SpaceMax/Core/Networking/GraphQL/SpaceX/Generated;
+			sourceTree = SOURCE_ROOT;
+		};
+		5353F77429F0745F00182EBE /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				5353F77529F0745F00182EBE /* Queries */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		5353F77529F0745F00182EBE /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				5353F77629F0745F00182EBE /* NextLaunchQuery.graphql.swift */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		5353F77829F0745F00182EBE /* Schema */ = {
+			isa = PBXGroup;
+			children = (
+				5353F77929F0745F00182EBE /* CustomScalars */,
+				5353F77B29F0745F00182EBE /* Objects */,
+				5353F78429F0745F00182EBE /* SchemaConfiguration.swift */,
+				5353F78529F0745F00182EBE /* SchemaMetadata.graphql.swift */,
+			);
+			path = Schema;
+			sourceTree = "<group>";
+		};
+		5353F77929F0745F00182EBE /* CustomScalars */ = {
+			isa = PBXGroup;
+			children = (
+				5353F77A29F0745F00182EBE /* Date.swift */,
+			);
+			path = CustomScalars;
+			sourceTree = "<group>";
+		};
+		5353F77B29F0745F00182EBE /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				5353F77C29F0745F00182EBE /* Launch.graphql.swift */,
+				5353F77D29F0745F00182EBE /* Rocket.graphql.swift */,
+				5353F77E29F0745F00182EBE /* Distance.graphql.swift */,
+				5353F77F29F0745F00182EBE /* RocketPayloadWeight.graphql.swift */,
+				5353F78029F0745F00182EBE /* LaunchRocket.graphql.swift */,
+				5353F78129F0745F00182EBE /* Query.graphql.swift */,
+				5353F78229F0745F00182EBE /* LaunchSite.graphql.swift */,
+				5353F78329F0745F00182EBE /* Mass.graphql.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 		53874E3729EEF29800A7CC35 = {
@@ -296,7 +384,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5335E13329F034C800A06BBA /* apollo-codegen-config.json in Resources */,
 				5335E13A29F0388C00A06BBA /* NextLaunch.graphql in Resources */,
 				53874E4B29EEF29900A7CC35 /* Preview Assets.xcassets in Resources */,
 				5335E13229F034C800A06BBA /* schema.graphqls in Resources */,
@@ -325,8 +412,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5353F78729F0745F00182EBE /* SpaceX.graphql.swift in Sources */,
+				5353F78E29F0745F00182EBE /* Query.graphql.swift in Sources */,
+				5353F78C29F0745F00182EBE /* RocketPayloadWeight.graphql.swift in Sources */,
+				5353F78B29F0745F00182EBE /* Distance.graphql.swift in Sources */,
+				5353F78829F0745F00182EBE /* Date.swift in Sources */,
+				5353F79129F0745F00182EBE /* SchemaConfiguration.swift in Sources */,
+				5353F79229F0745F00182EBE /* SchemaMetadata.graphql.swift in Sources */,
 				53874E4629EEF29800A7CC35 /* ContentView.swift in Sources */,
+				5353F79029F0745F00182EBE /* Mass.graphql.swift in Sources */,
+				5353F78629F0745F00182EBE /* NextLaunchQuery.graphql.swift in Sources */,
+				5353F78A29F0745F00182EBE /* Rocket.graphql.swift in Sources */,
+				5353F78929F0745F00182EBE /* Launch.graphql.swift in Sources */,
+				5335E17E29F045F900A06BBA /* SpaceXGQL.swift in Sources */,
+				5353F78F29F0745F00182EBE /* LaunchSite.graphql.swift in Sources */,
 				53874E4429EEF29800A7CC35 /* SpaceMaxApp.swift in Sources */,
+				5353F78D29F0745F00182EBE /* LaunchRocket.graphql.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
