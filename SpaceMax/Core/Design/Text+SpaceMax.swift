@@ -23,6 +23,7 @@ extension Text {
     /// - Parameters:
     ///   - style: The style to use when displaying this text.
     ///   - foregroundColor: The text color to use when displaying this text.
+    ///
     /// - Returns: A text view that uses the SpaceMax custom style.
     public func smText(_ style: Font.TextStyle = .body, foregroundColor: Color? = nil) -> Text {
         self.font(.system(style, design: design))
@@ -41,6 +42,7 @@ extension Text {
     /// - Parameters:
     ///   - size: The text size to use when displaying this text.
     ///   - foregroundColor: The text color to use when displaying this text.
+    ///
     /// - Returns: A text view that uses the SpaceMax custom style.
     public func smText(size: CGFloat, foregroundColor: Color? = nil) -> Text {
         self.font(.system(size: size, design: design))
