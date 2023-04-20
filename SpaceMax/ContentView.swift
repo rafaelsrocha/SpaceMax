@@ -18,7 +18,7 @@ struct ContentView: View {
         TabView(selection: $selectedTab) {
             NextLaunchScreen()
                 .tabItem {
-                    Label("Next Launch", systemImage: "arrow.up.and.person.rectangle.portrait")
+                    Label("next-launch", systemImage: "arrow.up.and.person.rectangle.portrait")
                 }
                 .tag(Tab.nextLaunch)
         }

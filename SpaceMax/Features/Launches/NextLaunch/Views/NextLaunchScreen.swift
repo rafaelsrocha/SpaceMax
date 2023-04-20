@@ -29,7 +29,7 @@ struct NextLaunchScreen: View {
                     .nextLaunchListModifiers()
             }
             .listStyle(.plain)
-            .navigationTitle("Next Launch")
+            .navigationTitle("next-launch")
             .background(AppTheme.screenBackground)
         }
     }

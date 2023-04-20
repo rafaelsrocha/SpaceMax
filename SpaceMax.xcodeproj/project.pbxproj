@@ -44,6 +44,7 @@
 		5393207029F19366002A4D33 /* NextLaunchAddressMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393206F29F19366002A4D33 /* NextLaunchAddressMap.swift */; };
 		5393207229F1A020002A4D33 /* NextLaunchWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393207129F1A020002A4D33 /* NextLaunchWeather.swift */; };
 		5393207429F1AC93002A4D33 /* NextLaunchPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393207329F1AC93002A4D33 /* NextLaunchPayload.swift */; };
+		5393207E29F1B9FC002A4D33 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5393207C29F1B9FC002A4D33 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		5393206F29F19366002A4D33 /* NextLaunchAddressMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchAddressMap.swift; sourceTree = "<group>"; };
 		5393207129F1A020002A4D33 /* NextLaunchWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchWeather.swift; sourceTree = "<group>"; };
 		5393207329F1AC93002A4D33 /* NextLaunchPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchPayload.swift; sourceTree = "<group>"; };
+		5393207D29F1B9FC002A4D33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 		5335E12929EF1A7D00A06BBA /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				5393207B29F1B9FC002A4D33 /* Localization */,
 				5393205E29F09CEA002A4D33 /* Design */,
 				5335E12A29EF1A7D00A06BBA /* Networking */,
 			);
@@ -353,6 +356,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		5393207B29F1B9FC002A4D33 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				5393207C29F1B9FC002A4D33 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -463,6 +474,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5393207E29F1B9FC002A4D33 /* Localizable.strings in Resources */,
 				5335E13A29F0388C00A06BBA /* NextLaunch.graphql in Resources */,
 				53874E4B29EEF29900A7CC35 /* Preview Assets.xcassets in Resources */,
 				5335E13229F034C800A06BBA /* schema.graphqls in Resources */,
@@ -554,6 +566,17 @@
 			targetProxy = 53874E5B29EEF29A00A7CC35 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5393207C29F1B9FC002A4D33 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5393207D29F1B9FC002A4D33 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		53874E6229EEF29A00A7CC35 /* Debug */ = {
