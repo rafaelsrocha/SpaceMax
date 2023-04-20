@@ -1,0 +1,7 @@
+excluded:
+  - SpaceMax/Core/Networking/GraphQL/SpaceX/Generated
+
+# Rules
+
+line_length: 
+  ignores_comments: true
