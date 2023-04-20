@@ -4,7 +4,7 @@
 .EXPORT_ALL_VARIABLES:
 .NOTPARALLEL:
 
-GRAPHQL_SCHEMA_DIR	 			:= $(CURDIR)/SpaceMax/Core/Networking/GraphQL/SpaceX
+GRAPHQL_SCHEMA_DIR				:= $(CURDIR)/SpaceMax/Core/Networking/GraphQL/SpaceX
 APOLLO_IOS_CLI					:= ./apollo-ios-cli
 APOLLO_CODEGEN_CONFIG_FILE		:= $(GRAPHQL_SCHEMA_DIR)/apollo-codegen-config.json
 APOLLO_IOS_CLI_DOWNLOAD_URL 	:= https://github.com/apollographql/apollo-ios/releases/download/1.1.2/apollo-ios-cli.tar.gz
