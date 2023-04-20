@@ -31,6 +31,19 @@
 		53874E5F29EEF29A00A7CC35 /* SpaceMaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53874E5E29EEF29A00A7CC35 /* SpaceMaxUITests.swift */; };
 		53874E6129EEF29A00A7CC35 /* SpaceMaxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53874E6029EEF29A00A7CC35 /* SpaceMaxUITestsLaunchTests.swift */; };
 		53874E7329EF065300A7CC35 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 53874E7229EF065300A7CC35 /* Apollo */; };
+		5393205929F0798D002A4D33 /* NextLaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393205829F0798D002A4D33 /* NextLaunchScreen.swift */; };
+		5393205B29F07CB0002A4D33 /* NextLaunchRocketSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393205A29F07CB0002A4D33 /* NextLaunchRocketSpec.swift */; };
+		5393205D29F097AB002A4D33 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393205C29F097AB002A4D33 /* AppTheme.swift */; };
+		5393206029F09D08002A4D33 /* Text+SpaceMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393205F29F09D08002A4D33 /* Text+SpaceMax.swift */; };
+		5393206229F0A072002A4D33 /* NextLaunchRocketSpecItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393206129F0A072002A4D33 /* NextLaunchRocketSpecItem.swift */; };
+		5393206629F16035002A4D33 /* NextLaunchCountdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393206529F16035002A4D33 /* NextLaunchCountdown.swift */; };
+		5393206829F16145002A4D33 /* NextLaunchCountdownTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393206729F16145002A4D33 /* NextLaunchCountdownTicker.swift */; };
+		5393206A29F16629002A4D33 /* View+SpaceMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393206929F16629002A4D33 /* View+SpaceMax.swift */; };
+		5393206C29F16D5C002A4D33 /* UINavigationBar+SpaceMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393206B29F16D5C002A4D33 /* UINavigationBar+SpaceMax.swift */; };
+		5393206E29F18D40002A4D33 /* NextLaunchAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393206D29F18D40002A4D33 /* NextLaunchAddress.swift */; };
+		5393207029F19366002A4D33 /* NextLaunchAddressMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393206F29F19366002A4D33 /* NextLaunchAddressMap.swift */; };
+		5393207229F1A020002A4D33 /* NextLaunchWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393207129F1A020002A4D33 /* NextLaunchWeather.swift */; };
+		5393207429F1AC93002A4D33 /* NextLaunchPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393207329F1AC93002A4D33 /* NextLaunchPayload.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +90,19 @@
 		53874E5A29EEF29A00A7CC35 /* SpaceMaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceMaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53874E5E29EEF29A00A7CC35 /* SpaceMaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceMaxUITests.swift; sourceTree = "<group>"; };
 		53874E6029EEF29A00A7CC35 /* SpaceMaxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceMaxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5393205829F0798D002A4D33 /* NextLaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchScreen.swift; sourceTree = "<group>"; };
+		5393205A29F07CB0002A4D33 /* NextLaunchRocketSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchRocketSpec.swift; sourceTree = "<group>"; };
+		5393205C29F097AB002A4D33 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		5393205F29F09D08002A4D33 /* Text+SpaceMax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+SpaceMax.swift"; sourceTree = "<group>"; };
+		5393206129F0A072002A4D33 /* NextLaunchRocketSpecItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchRocketSpecItem.swift; sourceTree = "<group>"; };
+		5393206529F16035002A4D33 /* NextLaunchCountdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchCountdown.swift; sourceTree = "<group>"; };
+		5393206729F16145002A4D33 /* NextLaunchCountdownTicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchCountdownTicker.swift; sourceTree = "<group>"; };
+		5393206929F16629002A4D33 /* View+SpaceMax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SpaceMax.swift"; sourceTree = "<group>"; };
+		5393206B29F16D5C002A4D33 /* UINavigationBar+SpaceMax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+SpaceMax.swift"; sourceTree = "<group>"; };
+		5393206D29F18D40002A4D33 /* NextLaunchAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchAddress.swift; sourceTree = "<group>"; };
+		5393206F29F19366002A4D33 /* NextLaunchAddressMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchAddressMap.swift; sourceTree = "<group>"; };
+		5393207129F1A020002A4D33 /* NextLaunchWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchWeather.swift; sourceTree = "<group>"; };
+		5393207329F1AC93002A4D33 /* NextLaunchPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchPayload.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +134,7 @@
 		5335E12929EF1A7D00A06BBA /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				5393205E29F09CEA002A4D33 /* Design */,
 				5335E12A29EF1A7D00A06BBA /* Networking */,
 			);
 			path = Core;
@@ -243,6 +270,7 @@
 				53874E4329EEF29800A7CC35 /* SpaceMaxApp.swift */,
 				53874E4529EEF29800A7CC35 /* ContentView.swift */,
 				53874E4729EEF29900A7CC35 /* Assets.xcassets */,
+				5393205529F07950002A4D33 /* Features */,
 				5335E12929EF1A7D00A06BBA /* Core */,
 				53874E4929EEF29900A7CC35 /* Preview Content */,
 			);
@@ -272,6 +300,57 @@
 				53874E6029EEF29A00A7CC35 /* SpaceMaxUITestsLaunchTests.swift */,
 			);
 			path = SpaceMaxUITests;
+			sourceTree = "<group>";
+		};
+		5393205529F07950002A4D33 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				5393205629F07958002A4D33 /* Launches */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		5393205629F07958002A4D33 /* Launches */ = {
+			isa = PBXGroup;
+			children = (
+				5393205729F0797C002A4D33 /* NextLaunch */,
+			);
+			path = Launches;
+			sourceTree = "<group>";
+		};
+		5393205729F0797C002A4D33 /* NextLaunch */ = {
+			isa = PBXGroup;
+			children = (
+				5393206429F15D3F002A4D33 /* Views */,
+			);
+			path = NextLaunch;
+			sourceTree = "<group>";
+		};
+		5393205E29F09CEA002A4D33 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				5393205C29F097AB002A4D33 /* AppTheme.swift */,
+				5393205F29F09D08002A4D33 /* Text+SpaceMax.swift */,
+				5393206929F16629002A4D33 /* View+SpaceMax.swift */,
+				5393206B29F16D5C002A4D33 /* UINavigationBar+SpaceMax.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		5393206429F15D3F002A4D33 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5393205829F0798D002A4D33 /* NextLaunchScreen.swift */,
+				5393206529F16035002A4D33 /* NextLaunchCountdown.swift */,
+				5393206729F16145002A4D33 /* NextLaunchCountdownTicker.swift */,
+				5393206D29F18D40002A4D33 /* NextLaunchAddress.swift */,
+				5393206F29F19366002A4D33 /* NextLaunchAddressMap.swift */,
+				5393205A29F07CB0002A4D33 /* NextLaunchRocketSpec.swift */,
+				5393206129F0A072002A4D33 /* NextLaunchRocketSpecItem.swift */,
+				5393207129F1A020002A4D33 /* NextLaunchWeather.swift */,
+				5393207329F1AC93002A4D33 /* NextLaunchPayload.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,17 +493,30 @@
 			files = (
 				5353F78729F0745F00182EBE /* SpaceX.graphql.swift in Sources */,
 				5353F78E29F0745F00182EBE /* Query.graphql.swift in Sources */,
+				5393206E29F18D40002A4D33 /* NextLaunchAddress.swift in Sources */,
+				5393205D29F097AB002A4D33 /* AppTheme.swift in Sources */,
+				5393207229F1A020002A4D33 /* NextLaunchWeather.swift in Sources */,
 				5353F78C29F0745F00182EBE /* RocketPayloadWeight.graphql.swift in Sources */,
 				5353F78B29F0745F00182EBE /* Distance.graphql.swift in Sources */,
+				5393206229F0A072002A4D33 /* NextLaunchRocketSpecItem.swift in Sources */,
 				5353F78829F0745F00182EBE /* Date.swift in Sources */,
+				5393206629F16035002A4D33 /* NextLaunchCountdown.swift in Sources */,
+				5393205929F0798D002A4D33 /* NextLaunchScreen.swift in Sources */,
 				5353F79129F0745F00182EBE /* SchemaConfiguration.swift in Sources */,
 				5353F79229F0745F00182EBE /* SchemaMetadata.graphql.swift in Sources */,
+				5393207429F1AC93002A4D33 /* NextLaunchPayload.swift in Sources */,
+				5393205B29F07CB0002A4D33 /* NextLaunchRocketSpec.swift in Sources */,
+				5393207029F19366002A4D33 /* NextLaunchAddressMap.swift in Sources */,
 				53874E4629EEF29800A7CC35 /* ContentView.swift in Sources */,
+				5393206829F16145002A4D33 /* NextLaunchCountdownTicker.swift in Sources */,
+				5393206A29F16629002A4D33 /* View+SpaceMax.swift in Sources */,
 				5353F79029F0745F00182EBE /* Mass.graphql.swift in Sources */,
 				5353F78629F0745F00182EBE /* NextLaunchQuery.graphql.swift in Sources */,
 				5353F78A29F0745F00182EBE /* Rocket.graphql.swift in Sources */,
 				5353F78929F0745F00182EBE /* Launch.graphql.swift in Sources */,
+				5393206C29F16D5C002A4D33 /* UINavigationBar+SpaceMax.swift in Sources */,
 				5335E17E29F045F900A06BBA /* SpaceXGQL.swift in Sources */,
+				5393206029F09D08002A4D33 /* Text+SpaceMax.swift in Sources */,
 				5353F78F29F0745F00182EBE /* LaunchSite.graphql.swift in Sources */,
 				53874E4429EEF29800A7CC35 /* SpaceMaxApp.swift in Sources */,
 				5353F78D29F0745F00182EBE /* LaunchRocket.graphql.swift in Sources */,
