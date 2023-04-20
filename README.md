@@ -1,6 +1,6 @@
 # SpaceMAX 🚀
 
-It's a SpaceX-based app I'm creating for fun while trying out some programming concepts.
+It's a SpaceX-based iOS app I'm creating for fun while trying out some programming concepts.
 
 ## Building the app
 
@@ -12,19 +12,15 @@ After creating your `.graphql` file containing your query, run `make generate-gr
 
 ## Features
 
-[ ] Next launch
-[ ] Launches
-[ ] Rockets info
-[ ] Light/dark mode
-
-### Next launch
-
-As explained here https://medium.com/open-graphql/launching-spacex-graphql-api-b3d7029086e0
+- [ ] Next launch
+- [ ] Launches
+- [ ] Rockets info
+- [ ] Light/dark mode
 
 ## Roadmap
 
-[ ] UI animations
-[ ] Animated transitions
-[ ] 3D showroom
-[ ] [Microapps](https://increment.com/mobile/microapps-architecture/) – ([Medium's feedback](https://medium.engineering/evolution-of-the-medium-ios-app-architecture-8b6090f4508e) about it sounds promising)
+- [ ] UI animations
+- [ ] Animated transitions
+- [ ] 3D showroom
+- [ ] [Microapps](https://increment.com/mobile/microapps-architecture/) – ([Medium's feedback](https://medium.engineering/evolution-of-the-medium-ios-app-architecture-8b6090f4508e) about it sounds promising)
  
