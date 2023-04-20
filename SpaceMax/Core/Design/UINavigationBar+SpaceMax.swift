@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 extension UINavigationBar {
     /// Sets the NavigationBar appearance to SpaceMax custom style.
@@ -15,11 +16,11 @@ extension UINavigationBar {
 
         let navBarAppearance = UINavigationBar.appearance()
         navBarAppearance.largeTitleTextAttributes = [
-            .foregroundColor: UIColor(AppTheme.primaryFontColor),
+            .foregroundColor: UIColor(Color("PrimaryFontColor")),
             .font: assembleFont(forSize: largeTitleSize)
         ]
         navBarAppearance.titleTextAttributes = [
-            .foregroundColor: UIColor(AppTheme.primaryFontColor),
+            .foregroundColor: UIColor(Color("PrimaryFontColor")),
             .font: assembleFont(forSize: titleSize)
         ]
     }

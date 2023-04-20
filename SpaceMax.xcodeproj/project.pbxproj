@@ -33,7 +33,6 @@
 		53874E7329EF065300A7CC35 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 53874E7229EF065300A7CC35 /* Apollo */; };
 		5393205929F0798D002A4D33 /* NextLaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393205829F0798D002A4D33 /* NextLaunchScreen.swift */; };
 		5393205B29F07CB0002A4D33 /* NextLaunchRocketSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393205A29F07CB0002A4D33 /* NextLaunchRocketSpec.swift */; };
-		5393205D29F097AB002A4D33 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393205C29F097AB002A4D33 /* AppTheme.swift */; };
 		5393206029F09D08002A4D33 /* Text+SpaceMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393205F29F09D08002A4D33 /* Text+SpaceMax.swift */; };
 		5393206229F0A072002A4D33 /* NextLaunchRocketSpecItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393206129F0A072002A4D33 /* NextLaunchRocketSpecItem.swift */; };
 		5393206629F16035002A4D33 /* NextLaunchCountdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393206529F16035002A4D33 /* NextLaunchCountdown.swift */; };
@@ -45,6 +44,7 @@
 		5393207229F1A020002A4D33 /* NextLaunchWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393207129F1A020002A4D33 /* NextLaunchWeather.swift */; };
 		5393207429F1AC93002A4D33 /* NextLaunchPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393207329F1AC93002A4D33 /* NextLaunchPayload.swift */; };
 		5393207E29F1B9FC002A4D33 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5393207C29F1B9FC002A4D33 /* Localizable.strings */; };
+		5393208029F1BF9C002A4D33 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5393207F29F1BF9C002A4D33 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +93,6 @@
 		53874E6029EEF29A00A7CC35 /* SpaceMaxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceMaxUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5393205829F0798D002A4D33 /* NextLaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchScreen.swift; sourceTree = "<group>"; };
 		5393205A29F07CB0002A4D33 /* NextLaunchRocketSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchRocketSpec.swift; sourceTree = "<group>"; };
-		5393205C29F097AB002A4D33 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		5393205F29F09D08002A4D33 /* Text+SpaceMax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+SpaceMax.swift"; sourceTree = "<group>"; };
 		5393206129F0A072002A4D33 /* NextLaunchRocketSpecItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchRocketSpecItem.swift; sourceTree = "<group>"; };
 		5393206529F16035002A4D33 /* NextLaunchCountdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchCountdown.swift; sourceTree = "<group>"; };
@@ -105,6 +104,7 @@
 		5393207129F1A020002A4D33 /* NextLaunchWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchWeather.swift; sourceTree = "<group>"; };
 		5393207329F1AC93002A4D33 /* NextLaunchPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchPayload.swift; sourceTree = "<group>"; };
 		5393207D29F1B9FC002A4D33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5393207F29F1BF9C002A4D33 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,9 +136,9 @@
 		5335E12929EF1A7D00A06BBA /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				5393207B29F1B9FC002A4D33 /* Localization */,
 				5393205E29F09CEA002A4D33 /* Design */,
 				5335E12A29EF1A7D00A06BBA /* Networking */,
+				5393207B29F1B9FC002A4D33 /* Localization */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -273,6 +273,7 @@
 				53874E4329EEF29800A7CC35 /* SpaceMaxApp.swift */,
 				53874E4529EEF29800A7CC35 /* ContentView.swift */,
 				53874E4729EEF29900A7CC35 /* Assets.xcassets */,
+				5393207F29F1BF9C002A4D33 /* Colors.xcassets */,
 				5393205529F07950002A4D33 /* Features */,
 				5335E12929EF1A7D00A06BBA /* Core */,
 				53874E4929EEF29900A7CC35 /* Preview Content */,
@@ -332,7 +333,6 @@
 		5393205E29F09CEA002A4D33 /* Design */ = {
 			isa = PBXGroup;
 			children = (
-				5393205C29F097AB002A4D33 /* AppTheme.swift */,
 				5393205F29F09D08002A4D33 /* Text+SpaceMax.swift */,
 				5393206929F16629002A4D33 /* View+SpaceMax.swift */,
 				5393206B29F16D5C002A4D33 /* UINavigationBar+SpaceMax.swift */,
@@ -477,6 +477,7 @@
 				5393207E29F1B9FC002A4D33 /* Localizable.strings in Resources */,
 				5335E13A29F0388C00A06BBA /* NextLaunch.graphql in Resources */,
 				53874E4B29EEF29900A7CC35 /* Preview Assets.xcassets in Resources */,
+				5393208029F1BF9C002A4D33 /* Colors.xcassets in Resources */,
 				5335E13229F034C800A06BBA /* schema.graphqls in Resources */,
 				53874E4829EEF29900A7CC35 /* Assets.xcassets in Resources */,
 			);
@@ -506,7 +507,6 @@
 				5353F78729F0745F00182EBE /* SpaceX.graphql.swift in Sources */,
 				5353F78E29F0745F00182EBE /* Query.graphql.swift in Sources */,
 				5393206E29F18D40002A4D33 /* NextLaunchAddress.swift in Sources */,
-				5393205D29F097AB002A4D33 /* AppTheme.swift in Sources */,
 				5393207229F1A020002A4D33 /* NextLaunchWeather.swift in Sources */,
 				5353F78C29F0745F00182EBE /* RocketPayloadWeight.graphql.swift in Sources */,
 				5353F78B29F0745F00182EBE /* Distance.graphql.swift in Sources */,

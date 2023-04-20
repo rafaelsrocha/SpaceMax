@@ -26,7 +26,7 @@ struct NextLaunchPayload: View {
             }
         }
         .padding()
-        .background(AppTheme.sectionBackground)
+        .background(Color("SectionBackground"))
         .clipShape(RoundedRectangle(cornerRadius: 16))
     }
 }

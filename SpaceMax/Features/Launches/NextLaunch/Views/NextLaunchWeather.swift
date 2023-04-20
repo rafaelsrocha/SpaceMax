@@ -21,7 +21,7 @@ struct NextLaunchWeather: View {
             Text("18ºC").smText(size: 44)
         }
         .padding()
-        .background(AppTheme.sectionBackground)
+        .background(Color("SectionBackground"))
         .clipShape(RoundedRectangle(cornerRadius: 16))
     }
 }

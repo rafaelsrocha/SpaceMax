@@ -30,7 +30,7 @@ struct NextLaunchScreen: View {
             }
             .listStyle(.plain)
             .navigationTitle("next-launch")
-            .background(AppTheme.screenBackground)
+            .background(Color("ScreenBackground"))
         }
     }
 }

@@ -28,13 +28,13 @@ struct NextLaunchRocketSpecItem: View {
             case .height:
                 Image(systemName: "ruler.fill")
                     .rotationEffect(Angle(degrees: 90))
-                    .foregroundColor(AppTheme.primaryFontColor)
+                    .foregroundColor(Color("PrimaryFontColor"))
             case .mass:
                 Image(systemName: "scalemass.fill")
-                    .foregroundColor(AppTheme.primaryFontColor)
+                    .foregroundColor(Color("PrimaryFontColor"))
             case .diameter:
                 Image(systemName: "circle.inset.filled")
-                    .foregroundColor(AppTheme.primaryFontColor)
+                    .foregroundColor(Color("PrimaryFontColor"))
             }
 
             Text(itemValue).smText()
@@ -45,6 +45,6 @@ struct NextLaunchRocketSpecItem: View {
 struct NextLaunchRocketSpecItem_Previews: PreviewProvider {
     static var previews: some View {
         NextLaunchRocketSpecItem(type: .height, specValue: "345m")
-            .background(AppTheme.sectionBackground)
+            .background(Color("SectionBackground"))
     }
 }

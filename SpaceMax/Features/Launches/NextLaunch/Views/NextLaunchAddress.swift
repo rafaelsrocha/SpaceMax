@@ -15,14 +15,14 @@ struct NextLaunchAddress: View {
                 Spacer()
                 Text("Kennedy Space Center").smText(.headline)
                 Spacer()
-                Text("Space Commerce Way, Merritt Island, FL 32953, USA").smText(.subheadline, foregroundColor: AppTheme.secondaryFontColor)
+                Text("Space Commerce Way, Merritt Island, FL 32953, USA").smText(.subheadline, foregroundColor: Color("SecondaryFontColor"))
             }
             NextLaunchAddressMap()
                 .clipShape(RoundedRectangle(cornerRadius: 16))
                 .padding(.leading)
         }
         .padding()
-        .background(AppTheme.sectionBackground)
+        .background(Color("SectionBackground"))
         .clipShape(RoundedRectangle(cornerRadius: 16))
         .frame(height: 175)
     }
@@ -31,6 +31,5 @@ struct NextLaunchAddress: View {
 struct NextLaunchAddress_Previews: PreviewProvider {
     static var previews: some View {
         NextLaunchAddress()
-            .background(AppTheme.screenBackground)
     }
 }

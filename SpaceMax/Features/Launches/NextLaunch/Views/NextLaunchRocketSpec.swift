@@ -23,7 +23,7 @@ struct NextLaunchRocketSpec: View {
             }
             .padding(.trailing)
         }
-        .background(AppTheme.sectionBackground)
+        .background(Color("SectionBackground"))
         .clipShape(RoundedRectangle(cornerRadius: 16))
     }
 }

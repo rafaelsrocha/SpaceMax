@@ -26,6 +26,6 @@ struct NextLaunchCountdown: View {
 struct NextLaunchCountdown_Previews: PreviewProvider {
     static var previews: some View {
         NextLaunchCountdown()
-            .background(AppTheme.screenBackground)
+            .background(Color("ScreenBackground"))
     }
 }

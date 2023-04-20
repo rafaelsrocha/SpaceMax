@@ -27,7 +27,7 @@ extension Text {
     /// - Returns: A text view that uses the SpaceMax custom style.
     public func smText(_ style: Font.TextStyle = .body, foregroundColor: Color? = nil) -> Text {
         self.font(.system(style, design: design))
-            .foregroundColor(foregroundColor ?? AppTheme.primaryFontColor)
+            .foregroundColor(foregroundColor ?? Color("PrimaryFontColor"))
     }
 
     /// Sets the Text's font to SpaceMax custom style.
@@ -46,6 +46,6 @@ extension Text {
     /// - Returns: A text view that uses the SpaceMax custom style.
     public func smText(size: CGFloat, foregroundColor: Color? = nil) -> Text {
         self.font(.system(size: size, design: design))
-            .foregroundColor(foregroundColor ?? AppTheme.primaryFontColor)
+            .foregroundColor(foregroundColor ?? Color("PrimaryFontColor"))
     }
 }
