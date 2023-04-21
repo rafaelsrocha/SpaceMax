@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selectedTab: Tab = .nextLaunch
-    
+
     enum Tab {
         case nextLaunch
     }
-    
+
     var body: some View {
         TabView(selection: $selectedTab) {
             NextLaunchScreen()

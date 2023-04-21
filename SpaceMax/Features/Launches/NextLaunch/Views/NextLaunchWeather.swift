@@ -9,17 +9,18 @@ import SwiftUI
 
 struct NextLaunchWeather: View {
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack {
+            Text("Florida, USA").smText(.subheadline)
             HStack {
                 Image(systemName: "cloud.sun.circle")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 30)
                     .foregroundColor(.yellow)
-                Text("Florida, USA").smText(.subheadline)
+                Text("18ºC").smText(size: 36)
             }
-            Text("18ºC").smText(size: 44)
         }
+        .frame(maxWidth: .infinity)
         .padding()
         .background(Color("SectionBackground"))
         .clipShape(RoundedRectangle(cornerRadius: 16))

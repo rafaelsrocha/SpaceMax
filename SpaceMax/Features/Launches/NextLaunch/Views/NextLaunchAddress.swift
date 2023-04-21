@@ -15,7 +15,8 @@ struct NextLaunchAddress: View {
                 Spacer()
                 Text("Kennedy Space Center").smText(.headline)
                 Spacer()
-                Text("Space Commerce Way, Merritt Island, FL 32953, USA").smText(.subheadline, foregroundColor: Color("SecondaryFontColor"))
+                Text("Space Commerce Way, Merritt Island, FL 32953, USA")
+                    .smText(.subheadline, foregroundColor: Color("SecondaryFontColor"))
             }
             NextLaunchAddressMap()
                 .clipShape(RoundedRectangle(cornerRadius: 16))

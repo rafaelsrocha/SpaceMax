@@ -19,14 +19,16 @@ struct NextLaunchScreen: View {
                     .padding(.bottom)
                 NextLaunchAddress()
                     .nextLaunchListModifiers()
+                    .listRowInsets(.init(top: 20, leading: 20, bottom: 0, trailing: 20))
                 HStack(alignment: .top) {
                     NextLaunchRocketSpec()
-                    Spacer()
-                    NextLaunchWeather()
+                    VStack {
+                        NextLaunchWeather()
+                        NextLaunchCost()
+                    }
+                    .frame(width: 150)
                 }
                 .nextLaunchListModifiers()
-                NextLaunchPayload()
-                    .nextLaunchListModifiers()
             }
             .listStyle(.plain)
             .navigationTitle("next-launch")

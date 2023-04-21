@@ -10,16 +10,16 @@ import MapKit
 
 struct NextLaunchAddressMap: View {
     var coordinate: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868)
-    
+
     @State private var region = MKCoordinateRegion()
-    
+
     var body: some View {
         Map(coordinateRegion: $region)
             .onAppear {
                 setRegion(coordinate)
             }
     }
-    
+
     private func setRegion(_ coordinate: CLLocationCoordinate2D) {
         region = MKCoordinateRegion(
             center: coordinate,

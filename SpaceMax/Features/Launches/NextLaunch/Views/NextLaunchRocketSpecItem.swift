@@ -15,6 +15,7 @@ struct NextLaunchRocketSpecItem: View {
         case height
         case mass
         case diameter
+        case payloadMass
     }
 
     init(type: ItemType, specValue: String) {
@@ -24,20 +25,25 @@ struct NextLaunchRocketSpecItem: View {
 
     var body: some View {
         HStack {
-            switch itemType {
-            case .height:
-                Image(systemName: "ruler.fill")
-                    .rotationEffect(Angle(degrees: 90))
-                    .foregroundColor(Color("PrimaryFontColor"))
-            case .mass:
-                Image(systemName: "scalemass.fill")
-                    .foregroundColor(Color("PrimaryFontColor"))
-            case .diameter:
-                Image(systemName: "circle.inset.filled")
-                    .foregroundColor(Color("PrimaryFontColor"))
-            }
+            Image(systemName: imageName)
+                .foregroundColor(Color("PrimaryFontColor"))
+            Text(itemValue)
+                .smText()
+                .scaledToFit()
+        }
+        .padding(.vertical, 2)
+    }
 
-            Text(itemValue).smText()
+    private var imageName: String {
+        switch itemType {
+        case .height:
+            return "ruler.fill"
+        case .mass:
+            return "scalemass.fill"
+        case .diameter:
+            return "circle.inset.filled"
+        case .payloadMass:
+            return "bag.fill.badge.plus"
         }
     }
 }

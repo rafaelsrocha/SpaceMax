@@ -42,9 +42,9 @@
 		5393206E29F18D40002A4D33 /* NextLaunchAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393206D29F18D40002A4D33 /* NextLaunchAddress.swift */; };
 		5393207029F19366002A4D33 /* NextLaunchAddressMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393206F29F19366002A4D33 /* NextLaunchAddressMap.swift */; };
 		5393207229F1A020002A4D33 /* NextLaunchWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393207129F1A020002A4D33 /* NextLaunchWeather.swift */; };
-		5393207429F1AC93002A4D33 /* NextLaunchPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393207329F1AC93002A4D33 /* NextLaunchPayload.swift */; };
 		5393207E29F1B9FC002A4D33 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5393207C29F1B9FC002A4D33 /* Localizable.strings */; };
 		5393208029F1BF9C002A4D33 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5393207F29F1BF9C002A4D33 /* Colors.xcassets */; };
+		5393208229F1F770002A4D33 /* NextLaunchCost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393208129F1F770002A4D33 /* NextLaunchCost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,9 +102,9 @@
 		5393206D29F18D40002A4D33 /* NextLaunchAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchAddress.swift; sourceTree = "<group>"; };
 		5393206F29F19366002A4D33 /* NextLaunchAddressMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchAddressMap.swift; sourceTree = "<group>"; };
 		5393207129F1A020002A4D33 /* NextLaunchWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchWeather.swift; sourceTree = "<group>"; };
-		5393207329F1AC93002A4D33 /* NextLaunchPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchPayload.swift; sourceTree = "<group>"; };
 		5393207D29F1B9FC002A4D33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5393207F29F1BF9C002A4D33 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		5393208129F1F770002A4D33 /* NextLaunchCost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchCost.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,7 +351,7 @@
 				5393205A29F07CB0002A4D33 /* NextLaunchRocketSpec.swift */,
 				5393206129F0A072002A4D33 /* NextLaunchRocketSpecItem.swift */,
 				5393207129F1A020002A4D33 /* NextLaunchWeather.swift */,
-				5393207329F1AC93002A4D33 /* NextLaunchPayload.swift */,
+				5393208129F1F770002A4D33 /* NextLaunchCost.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -516,7 +516,6 @@
 				5393205929F0798D002A4D33 /* NextLaunchScreen.swift in Sources */,
 				5353F79129F0745F00182EBE /* SchemaConfiguration.swift in Sources */,
 				5353F79229F0745F00182EBE /* SchemaMetadata.graphql.swift in Sources */,
-				5393207429F1AC93002A4D33 /* NextLaunchPayload.swift in Sources */,
 				5393205B29F07CB0002A4D33 /* NextLaunchRocketSpec.swift in Sources */,
 				5393207029F19366002A4D33 /* NextLaunchAddressMap.swift in Sources */,
 				53874E4629EEF29800A7CC35 /* ContentView.swift in Sources */,
@@ -524,6 +523,7 @@
 				5393206A29F16629002A4D33 /* View+SpaceMax.swift in Sources */,
 				5353F79029F0745F00182EBE /* Mass.graphql.swift in Sources */,
 				5353F78629F0745F00182EBE /* NextLaunchQuery.graphql.swift in Sources */,
+				5393208229F1F770002A4D33 /* NextLaunchCost.swift in Sources */,
 				5353F78A29F0745F00182EBE /* Rocket.graphql.swift in Sources */,
 				5353F78929F0745F00182EBE /* Launch.graphql.swift in Sources */,
 				5393206C29F16D5C002A4D33 /* UINavigationBar+SpaceMax.swift in Sources */,
