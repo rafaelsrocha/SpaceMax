@@ -49,6 +49,7 @@
 		5393208A29F53CC1002A4D33 /* String+SpaceMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393208929F53CC1002A4D33 /* String+SpaceMax.swift */; };
 		5393208C29F53EE3002A4D33 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393208B29F53EE3002A4D33 /* LocationManager.swift */; };
 		5393209029F71199002A4D33 /* NextLaunchCountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393208F29F71199002A4D33 /* NextLaunchCountdownTimer.swift */; };
+		5393209329F72987002A4D33 /* AppSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393209229F72987002A4D33 /* AppSpecs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		5393208929F53CC1002A4D33 /* String+SpaceMax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SpaceMax.swift"; sourceTree = "<group>"; };
 		5393208B29F53EE3002A4D33 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		5393208F29F71199002A4D33 /* NextLaunchCountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchCountdownTimer.swift; sourceTree = "<group>"; };
+		5393209229F72987002A4D33 /* AppSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSpecs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -345,6 +347,7 @@
 		5393205E29F09CEA002A4D33 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				5393209229F72987002A4D33 /* AppSpecs.swift */,
 				5393205F29F09D08002A4D33 /* Text+SpaceMax.swift */,
 				5393206929F16629002A4D33 /* View+SpaceMax.swift */,
 				5393206B29F16D5C002A4D33 /* UINavigationBar+SpaceMax.swift */,
@@ -550,6 +553,7 @@
 				5393208C29F53EE3002A4D33 /* LocationManager.swift in Sources */,
 				5393206229F0A072002A4D33 /* NextLaunchRocketSpecItem.swift in Sources */,
 				5353F78829F0745F00182EBE /* Date.swift in Sources */,
+				5393209329F72987002A4D33 /* AppSpecs.swift in Sources */,
 				5393206629F16035002A4D33 /* NextLaunchCountdown.swift in Sources */,
 				5393205929F0798D002A4D33 /* NextLaunchScreen.swift in Sources */,
 				5353F79129F0745F00182EBE /* SchemaConfiguration.swift in Sources */,

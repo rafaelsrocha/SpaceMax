@@ -23,7 +23,7 @@ struct NextLaunchCost: View {
         .padding()
         .frame(maxWidth: .infinity)
         .background(Color("SectionBackground"))
-        .clipShape(RoundedRectangle(cornerRadius: 16))
+        .clipShape(RoundedRectangle(cornerRadius: AppSpecs.sectionCornerRadius))
     }
 }
 

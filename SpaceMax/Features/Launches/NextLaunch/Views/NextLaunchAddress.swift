@@ -23,13 +23,13 @@ struct NextLaunchAddress: View {
                     .smText(.subheadline, foregroundColor: Color("SecondaryFontColor"))
             }
             NextLaunchAddressMap()
-                .clipShape(RoundedRectangle(cornerRadius: 16))
+                .clipShape(RoundedRectangle(cornerRadius: AppSpecs.sectionCornerRadius))
                 .padding(.leading)
                 .environmentObject(viewModel)
         }
         .padding()
         .background(Color("SectionBackground"))
-        .clipShape(RoundedRectangle(cornerRadius: 16))
+        .clipShape(RoundedRectangle(cornerRadius: AppSpecs.sectionCornerRadius))
         .frame(height: 175)
     }
 }
