@@ -9,10 +9,7 @@ import Foundation
 import Apollo
 
 protocol SpaceGQLHandler {
-    func queryRequest<T>(
-        query: T,
-        resultHandler: @escaping GraphQLResultHandler<T.Data>
-    ) where T: GraphQLQuery
+    func queryRequest<T>(query: T) async throws -> GraphQLResult<T.Data> where T: GraphQLQuery
 }
 
 struct SpaceXGQL: SpaceGQLHandler {
@@ -26,10 +23,16 @@ struct SpaceXGQL: SpaceGQLHandler {
 
     // MARK: - SpaceGQLHandler
 
-    func queryRequest<T>(
-        query: T,
-        resultHandler: @escaping GraphQLResultHandler<T.Data>
-    ) where T: GraphQLQuery {
-        client.fetch(query: query, resultHandler: resultHandler)
+    func queryRequest<T>(query: T) async throws -> GraphQLResult<T.Data> where T: GraphQLQuery {
+        try await withCheckedThrowingContinuation { continuation in
+            client.fetch(query: query) { response in
+                switch response {
+                case .success(let result):
+                    continuation.resume(returning: result)
+                case .failure(let error):
+                    continuation.resume(throwing: error)
+                }
+            }
+        }
     }
 }
