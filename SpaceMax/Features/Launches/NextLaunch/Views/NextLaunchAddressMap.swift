@@ -9,14 +9,18 @@ import SwiftUI
 import MapKit
 
 struct NextLaunchAddressMap: View {
-    var coordinate: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868)
-
-    @State private var region = MKCoordinateRegion()
+    @EnvironmentObject
+    var viewModel: NextLaunchViewModel
+    @State
+    private var region = MKCoordinateRegion()
 
     var body: some View {
         Map(coordinateRegion: $region)
-            .onAppear {
-                setRegion(coordinate)
+            .onChange(of: viewModel.addressData.location.latitude) { _ in
+                setRegion(viewModel.addressData.location)
+            }
+            .onChange(of: viewModel.addressData.location.longitude) { _ in
+                setRegion(viewModel.addressData.location)
             }
     }
 
@@ -31,5 +35,6 @@ struct NextLaunchAddressMap: View {
 struct NextLaunchAddressMap_Previews: PreviewProvider {
     static var previews: some View {
         NextLaunchAddressMap()
+            .environmentObject(NextLaunchViewModel())
     }
 }

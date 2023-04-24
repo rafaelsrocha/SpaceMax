@@ -8,19 +8,24 @@
 import SwiftUI
 
 struct NextLaunchAddress: View {
+    @EnvironmentObject
+    var viewModel: NextLaunchViewModel
+
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
                 Text("Location").smText(.title3)
                 Spacer()
-                Text("Kennedy Space Center").smText(.headline)
+                Text(viewModel.addressData.name)
+                    .smText(.headline)
                 Spacer()
-                Text("Space Commerce Way, Merritt Island, FL 32953, USA")
+                Text(viewModel.addressData.address)
                     .smText(.subheadline, foregroundColor: Color("SecondaryFontColor"))
             }
             NextLaunchAddressMap()
                 .clipShape(RoundedRectangle(cornerRadius: 16))
                 .padding(.leading)
+                .environmentObject(viewModel)
         }
         .padding()
         .background(Color("SectionBackground"))
@@ -32,5 +37,6 @@ struct NextLaunchAddress: View {
 struct NextLaunchAddress_Previews: PreviewProvider {
     static var previews: some View {
         NextLaunchAddress()
+            .environmentObject(NextLaunchViewModel())
     }
 }

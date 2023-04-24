@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct NextLaunchCost: View {
+    var cost: String
+
     var body: some View {
         VStack {
             Text("Launch cost")
                 .smText(.headline)
-            Text("$ 90 million")
+            Text(cost)
                 .smText()
                 .padding(.top, 1)
+                .minimumScaleFactor(0.3)
+                .lineLimit(1)
         }
         .padding()
         .frame(maxWidth: .infinity)
@@ -25,7 +29,7 @@ struct NextLaunchCost: View {
 
 struct NextLaunchCost_Previews: PreviewProvider {
     static var previews: some View {
-        NextLaunchCost()
+        NextLaunchCost(cost: "$ 90000000")
             .background(Color("SectionBackground"))
     }
 }

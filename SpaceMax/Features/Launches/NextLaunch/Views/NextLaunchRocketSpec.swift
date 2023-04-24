@@ -8,22 +8,25 @@
 import SwiftUI
 
 struct NextLaunchRocketSpec: View {
+    @EnvironmentObject
+    var viewModel: NextLaunchViewModel
+
     var body: some View {
         VStack {
-            Text("Falcon Heavy")
+            Text(viewModel.rocketSpecData.name)
                 .smText(.headline)
                 .padding(.vertical)
             HStack {
-                Image("Falcon9Heavy")
+                Image(viewModel.rocketSpecData.imageName)
                     .resizable()
                     .scaledToFit()
                     .frame(height: 120)
                     .padding(.horizontal, 16)
                 VStack(alignment: .leading) {
-                    NextLaunchRocketSpecItem(type: .height, specValue: "350m")
-                    NextLaunchRocketSpecItem(type: .mass, specValue: "1420 T")
-                    NextLaunchRocketSpecItem(type: .diameter, specValue: "30m")
-                    NextLaunchRocketSpecItem(type: .payloadMass, specValue: "03294Kg")
+                    NextLaunchRocketSpecItem(type: .height, specValue: viewModel.rocketSpecData.height)
+                    NextLaunchRocketSpecItem(type: .mass, specValue: viewModel.rocketSpecData.mass)
+                    NextLaunchRocketSpecItem(type: .diameter, specValue: viewModel.rocketSpecData.diameter)
+                    NextLaunchRocketSpecItem(type: .payloadMass, specValue: viewModel.rocketSpecData.payloadMass)
                 }
                 .padding(.trailing)
             }
@@ -39,5 +42,6 @@ struct NextLaunchRocketSpec_Previews: PreviewProvider {
     static var previews: some View {
         NextLaunchRocketSpec()
             .frame(width: 170)
+            .environmentObject(NextLaunchViewModel())
     }
 }
