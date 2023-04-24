@@ -48,6 +48,7 @@
 		5393208829F2B27F002A4D33 /* NextLaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393208729F2B27F002A4D33 /* NextLaunchViewModel.swift */; };
 		5393208A29F53CC1002A4D33 /* String+SpaceMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393208929F53CC1002A4D33 /* String+SpaceMax.swift */; };
 		5393208C29F53EE3002A4D33 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393208B29F53EE3002A4D33 /* LocationManager.swift */; };
+		5393209029F71199002A4D33 /* NextLaunchCountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393208F29F71199002A4D33 /* NextLaunchCountdownTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		5393208729F2B27F002A4D33 /* NextLaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchViewModel.swift; sourceTree = "<group>"; };
 		5393208929F53CC1002A4D33 /* String+SpaceMax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SpaceMax.swift"; sourceTree = "<group>"; };
 		5393208B29F53EE3002A4D33 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5393208F29F71199002A4D33 /* NextLaunchCountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchCountdownTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				5393208729F2B27F002A4D33 /* NextLaunchViewModel.swift */,
+				5393209129F726E4002A4D33 /* Helpers */,
 				5393206429F15D3F002A4D33 /* Views */,
 			);
 			path = NextLaunch;
@@ -387,6 +390,14 @@
 				5393208B29F53EE3002A4D33 /* LocationManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		5393209129F726E4002A4D33 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5393208F29F71199002A4D33 /* NextLaunchCountdownTimer.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -550,6 +561,7 @@
 				5393206A29F16629002A4D33 /* View+SpaceMax.swift in Sources */,
 				5353F79029F0745F00182EBE /* Mass.graphql.swift in Sources */,
 				5353F78629F0745F00182EBE /* NextLaunchQuery.graphql.swift in Sources */,
+				5393209029F71199002A4D33 /* NextLaunchCountdownTimer.swift in Sources */,
 				5393208A29F53CC1002A4D33 /* String+SpaceMax.swift in Sources */,
 				5393208229F1F770002A4D33 /* NextLaunchCost.swift in Sources */,
 				5353F78A29F0745F00182EBE /* Rocket.graphql.swift in Sources */,

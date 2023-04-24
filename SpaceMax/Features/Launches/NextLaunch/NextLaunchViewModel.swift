@@ -43,6 +43,7 @@ struct NextLaunchAddressData {
 
 @MainActor
 class NextLaunchViewModel: NextLaunchViewModelProtocol, ObservableObject {
+    private var countdownTimer: NextLaunchCountdownTimer?
     @Published
     private(set) var missionName: String = "–"
     @Published
@@ -107,7 +108,15 @@ class NextLaunchViewModel: NextLaunchViewModelProtocol, ObservableObject {
 
         // Countdown data
         if let launchDate = nextLaunch.launch_date_utc {
-            countdownData = try parseCountdownData(forDate: launchDate)
+            let countdownComponents: DateComponents = try launchDate.toLaunchDateComponents()
+            countdownData = parseCountdownData(fromComponents: countdownComponents)
+
+            if countdownTimer == nil {
+                countdownTimer = NextLaunchCountdownTimer(launchDateComponents: countdownComponents)
+                countdownTimer?.startCountdown { timerComponents in
+                    self.countdownData = self.parseCountdownData(fromComponents: timerComponents)
+                }
+            }
         }
 
         // Rocket's specs data
@@ -132,15 +141,31 @@ class NextLaunchViewModel: NextLaunchViewModelProtocol, ObservableObject {
     ///   - forDate: The launch date
     ///
     /// - Returns: NextLaunchCountdownData representing how much time is left to rocket's launch.
-    private func parseCountdownData(forDate launchDateUTC: String) throws -> NextLaunchCountdownData {
-        let countdownComponents = try launchDateUTC.toLaunchCountdownComponents()
+    private func parseCountdownData(fromComponents components: DateComponents) -> NextLaunchCountdownData {
+        var days: String = String(components.day ?? 0)
+        var hours: String = String(components.hour ?? 0)
+        var minutes: String = String(components.minute ?? 0)
+        var seconds: String = String(components.second ?? 0)
 
-        return NextLaunchCountdownData(
-            days: String(countdownComponents.days),
-            hours: String(countdownComponents.hours),
-            minutes: String(countdownComponents.minutes),
-            seconds: String(countdownComponents.seconds)
-        )
+        // Add leading 0 if it's only one char
+        if days.count < 2 {
+            days.insert("0", at: days.startIndex)
+        }
+        if hours.count < 2 {
+            hours.insert("0", at: hours.startIndex)
+        }
+        if minutes.count < 2 {
+            minutes.insert("0", at: minutes.startIndex)
+        }
+        if seconds.count < 2 {
+            seconds.insert("0", at: seconds.startIndex)
+        }
+
+        return NextLaunchCountdownData(days: days, hours: hours, minutes: minutes, seconds: seconds)
+    }
+
+    private func startCountdownTimer() {
+
     }
 
     /// Parses the Rocket date to NextLaunchRocketSpecData.
