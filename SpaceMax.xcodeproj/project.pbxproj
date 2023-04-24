@@ -45,6 +45,9 @@
 		5393207E29F1B9FC002A4D33 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5393207C29F1B9FC002A4D33 /* Localizable.strings */; };
 		5393208029F1BF9C002A4D33 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5393207F29F1BF9C002A4D33 /* Colors.xcassets */; };
 		5393208229F1F770002A4D33 /* NextLaunchCost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393208129F1F770002A4D33 /* NextLaunchCost.swift */; };
+		5393208829F2B27F002A4D33 /* NextLaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393208729F2B27F002A4D33 /* NextLaunchViewModel.swift */; };
+		5393208A29F53CC1002A4D33 /* String+SpaceMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393208929F53CC1002A4D33 /* String+SpaceMax.swift */; };
+		5393208C29F53EE3002A4D33 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393208B29F53EE3002A4D33 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +108,9 @@
 		5393207D29F1B9FC002A4D33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5393207F29F1BF9C002A4D33 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		5393208129F1F770002A4D33 /* NextLaunchCost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchCost.swift; sourceTree = "<group>"; };
+		5393208729F2B27F002A4D33 /* NextLaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchViewModel.swift; sourceTree = "<group>"; };
+		5393208929F53CC1002A4D33 /* String+SpaceMax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SpaceMax.swift"; sourceTree = "<group>"; };
+		5393208B29F53EE3002A4D33 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,8 @@
 		5335E12929EF1A7D00A06BBA /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				5393208E29F702EA002A4D33 /* Managers */,
+				5393208D29F702DD002A4D33 /* Utils */,
 				5393205E29F09CEA002A4D33 /* Design */,
 				5335E12A29EF1A7D00A06BBA /* Networking */,
 				5393207B29F1B9FC002A4D33 /* Localization */,
@@ -325,6 +333,7 @@
 		5393205729F0797C002A4D33 /* NextLaunch */ = {
 			isa = PBXGroup;
 			children = (
+				5393208729F2B27F002A4D33 /* NextLaunchViewModel.swift */,
 				5393206429F15D3F002A4D33 /* Views */,
 			);
 			path = NextLaunch;
@@ -362,6 +371,22 @@
 				5393207C29F1B9FC002A4D33 /* Localizable.strings */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		5393208D29F702DD002A4D33 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5393208929F53CC1002A4D33 /* String+SpaceMax.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5393208E29F702EA002A4D33 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				5393208B29F53EE3002A4D33 /* LocationManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -505,11 +530,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5353F78729F0745F00182EBE /* SpaceX.graphql.swift in Sources */,
+				5393208829F2B27F002A4D33 /* NextLaunchViewModel.swift in Sources */,
 				5353F78E29F0745F00182EBE /* Query.graphql.swift in Sources */,
 				5393206E29F18D40002A4D33 /* NextLaunchAddress.swift in Sources */,
 				5393207229F1A020002A4D33 /* NextLaunchWeather.swift in Sources */,
 				5353F78C29F0745F00182EBE /* RocketPayloadWeight.graphql.swift in Sources */,
 				5353F78B29F0745F00182EBE /* Distance.graphql.swift in Sources */,
+				5393208C29F53EE3002A4D33 /* LocationManager.swift in Sources */,
 				5393206229F0A072002A4D33 /* NextLaunchRocketSpecItem.swift in Sources */,
 				5353F78829F0745F00182EBE /* Date.swift in Sources */,
 				5393206629F16035002A4D33 /* NextLaunchCountdown.swift in Sources */,
@@ -523,6 +550,7 @@
 				5393206A29F16629002A4D33 /* View+SpaceMax.swift in Sources */,
 				5353F79029F0745F00182EBE /* Mass.graphql.swift in Sources */,
 				5353F78629F0745F00182EBE /* NextLaunchQuery.graphql.swift in Sources */,
+				5393208A29F53CC1002A4D33 /* String+SpaceMax.swift in Sources */,
 				5393208229F1F770002A4D33 /* NextLaunchCost.swift in Sources */,
 				5353F78A29F0745F00182EBE /* Rocket.graphql.swift in Sources */,
 				5353F78929F0745F00182EBE /* Launch.graphql.swift in Sources */,
