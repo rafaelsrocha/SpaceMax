@@ -50,6 +50,9 @@
 		5393208C29F53EE3002A4D33 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393208B29F53EE3002A4D33 /* LocationManager.swift */; };
 		5393209029F71199002A4D33 /* NextLaunchCountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393208F29F71199002A4D33 /* NextLaunchCountdownTimer.swift */; };
 		5393209329F72987002A4D33 /* AppSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393209229F72987002A4D33 /* AppSpecs.swift */; };
+		5393209629F73EDA002A4D33 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393209529F73EDA002A4D33 /* NetworkRequest.swift */; };
+		5393209929F746BB002A4D33 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393209829F746BB002A4D33 /* Weather.swift */; };
+		5393209B29F746C9002A4D33 /* WeatherResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393209A29F746C9002A4D33 /* WeatherResource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +118,11 @@
 		5393208B29F53EE3002A4D33 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		5393208F29F71199002A4D33 /* NextLaunchCountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchCountdownTimer.swift; sourceTree = "<group>"; };
 		5393209229F72987002A4D33 /* AppSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSpecs.swift; sourceTree = "<group>"; };
+		5393209529F73EDA002A4D33 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		5393209829F746BB002A4D33 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		5393209A29F746C9002A4D33 /* WeatherResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResource.swift; sourceTree = "<group>"; };
+		5393209E29F7F271002A4D33 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		5393209F29F7F7BD002A4D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +166,7 @@
 		5335E12A29EF1A7D00A06BBA /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				5393209429F73EC7002A4D33 /* REST */,
 				5335E15C29F0432000A06BBA /* GraphQL */,
 			);
 			path = Networking;
@@ -284,6 +293,8 @@
 			children = (
 				53874E4329EEF29800A7CC35 /* SpaceMaxApp.swift */,
 				53874E4529EEF29800A7CC35 /* ContentView.swift */,
+				5393209F29F7F7BD002A4D33 /* Info.plist */,
+				5393209E29F7F271002A4D33 /* Config.xcconfig */,
 				53874E4729EEF29900A7CC35 /* Assets.xcassets */,
 				5393207F29F1BF9C002A4D33 /* Colors.xcassets */,
 				5393205529F07950002A4D33 /* Features */,
@@ -401,6 +412,24 @@
 				5393208F29F71199002A4D33 /* NextLaunchCountdownTimer.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5393209429F73EC7002A4D33 /* REST */ = {
+			isa = PBXGroup;
+			children = (
+				5393209729F746A4002A4D33 /* TomorrowIO */,
+				5393209529F73EDA002A4D33 /* NetworkRequest.swift */,
+			);
+			path = REST;
+			sourceTree = "<group>";
+		};
+		5393209729F746A4002A4D33 /* TomorrowIO */ = {
+			isa = PBXGroup;
+			children = (
+				5393209829F746BB002A4D33 /* Weather.swift */,
+				5393209A29F746C9002A4D33 /* WeatherResource.swift */,
+			);
+			path = TomorrowIO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -559,6 +588,8 @@
 				5353F79129F0745F00182EBE /* SchemaConfiguration.swift in Sources */,
 				5353F79229F0745F00182EBE /* SchemaMetadata.graphql.swift in Sources */,
 				5393205B29F07CB0002A4D33 /* NextLaunchRocketSpec.swift in Sources */,
+				5393209B29F746C9002A4D33 /* WeatherResource.swift in Sources */,
+				5393209629F73EDA002A4D33 /* NetworkRequest.swift in Sources */,
 				5393207029F19366002A4D33 /* NextLaunchAddressMap.swift in Sources */,
 				53874E4629EEF29800A7CC35 /* ContentView.swift in Sources */,
 				5393206829F16145002A4D33 /* NextLaunchCountdownTicker.swift in Sources */,
@@ -576,6 +607,7 @@
 				5353F78F29F0745F00182EBE /* LaunchSite.graphql.swift in Sources */,
 				53874E4429EEF29800A7CC35 /* SpaceMaxApp.swift in Sources */,
 				5353F78D29F0745F00182EBE /* LaunchRocket.graphql.swift in Sources */,
+				5393209929F746BB002A4D33 /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,6 +657,7 @@
 /* Begin XCBuildConfiguration section */
 		53874E6229EEF29A00A7CC35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5393209E29F7F271002A4D33 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -739,6 +772,7 @@
 		};
 		53874E6529EEF29A00A7CC35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5393209E29F7F271002A4D33 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -747,6 +781,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SpaceMax/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpaceMax/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -774,6 +809,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SpaceMax/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpaceMax/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
