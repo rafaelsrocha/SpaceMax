@@ -8,6 +8,7 @@
 import XCTest
 @testable import SpaceMax
 
+// swiftlint:disable type_name
 final class String_SpaceMaxTests: XCTestCase {
     func test_parseDateComponents() throws {
         // Given
@@ -23,10 +24,10 @@ final class String_SpaceMaxTests: XCTestCase {
             minute: 30,
             second: 23
         )
-        
+
         // When
         let actualComponents: DateComponents = try futureDateString.parseDateComponents(from: frozenDate)
-        
+
         // Then
         XCTAssertEqual(expectedComponents.day, actualComponents.day)
         XCTAssertEqual(expectedComponents.hour, actualComponents.hour)
@@ -34,3 +35,4 @@ final class String_SpaceMaxTests: XCTestCase {
         XCTAssertEqual(expectedComponents.second, actualComponents.second)
     }
 }
+// swiftlint:enable type_name
