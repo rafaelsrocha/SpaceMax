@@ -8,6 +8,8 @@ GRAPHQL_SCHEMA_DIR				:= $(CURDIR)/SpaceMax/Core/Networking/GraphQL/SpaceX
 APOLLO_IOS_CLI					:= ./apollo-ios-cli
 APOLLO_CODEGEN_CONFIG_FILE		:= $(GRAPHQL_SCHEMA_DIR)/apollo-codegen-config.json
 APOLLO_IOS_CLI_DOWNLOAD_URL 	:= https://github.com/apollographql/apollo-ios/releases/download/1.1.2/apollo-ios-cli.tar.gz
+XCCONFIG_PATH					:= $(CURDIR)/SpaceMax/Config.xcconfig
+TOMORROW_IO_API_KEY_ID			:= TOMORROW_IO_API_KEY
 
 ##
 # `help` description
@@ -23,6 +25,8 @@ define HELP_CONTENT
     Downloads the GraphQL `schema.graphqls` file to ($(GRAPHQL_SCHEMA_DIR)).
 \033[1mgenerate-graphql-code\033[0m
     Generate the Swift objects, schemas and operations based on `.graphql` files existent on ($(GRAPHQL_SCHEMA_DIR)).
+\033[1mset-tomorrow-io-api-key\033[0m
+    Sets the tomorrow.io API key to xcconfig file, to be used inside the project.
 endef
 
 ##
@@ -41,6 +45,7 @@ setup:
 	$(MAKE) init-graphql-codegen-config
 	$(MAKE) fetch-graphql-schema
 	$(MAKE) generate-graphql-code
+	$(MAKE) set-tomorrow-io-api-key
 
 ##
 # `install-tools` command
@@ -94,3 +99,13 @@ generate-graphql-code:
 	$(APOLLO_IOS_CLI) generate \
 		--path=$(APOLLO_CODEGEN_CONFIG_FILE) \
 		--verbose
+
+.PHONY: set-tomorrow-io-api-key
+set-tomorrow-io-api-key:
+ifeq (, $(wildcard $(XCCONFIG_PATH)))
+	@read -p "Enter tomorrow.io API key: " api_key; \
+    echo "$$TOMORROW_IO_API_KEY_ID = $$api_key" > $(XCCONFIG_PATH); \
+	echo "$$TOMORROW_IO_API_KEY_ID set in $$XCCONFIG_PATH"
+else
+	$(info File $(XCCONFIG_PATH) already exists. Please, update the value for $(TOMORROW_IO_API_KEY_ID) key directly there)
+endif
