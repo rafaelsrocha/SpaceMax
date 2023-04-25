@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selectedTab: Tab = .nextLaunch
+
+    enum Tab {
+        case nextLaunch
+    }
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView(selection: $selectedTab) {
+            NextLaunchScreen()
+                .tabItem {
+                    Label("next-launch", systemImage: "arrow.up.and.person.rectangle.portrait")
+                }
+                .tag(Tab.nextLaunch)
         }
-        .padding()
     }
 }
 

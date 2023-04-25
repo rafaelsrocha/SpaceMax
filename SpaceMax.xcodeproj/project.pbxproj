@@ -27,21 +27,34 @@
 		53874E4629EEF29800A7CC35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53874E4529EEF29800A7CC35 /* ContentView.swift */; };
 		53874E4829EEF29900A7CC35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53874E4729EEF29900A7CC35 /* Assets.xcassets */; };
 		53874E4B29EEF29900A7CC35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53874E4A29EEF29900A7CC35 /* Preview Assets.xcassets */; };
-		53874E5529EEF29900A7CC35 /* SpaceMaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53874E5429EEF29900A7CC35 /* SpaceMaxTests.swift */; };
-		53874E5F29EEF29A00A7CC35 /* SpaceMaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53874E5E29EEF29A00A7CC35 /* SpaceMaxUITests.swift */; };
-		53874E6129EEF29A00A7CC35 /* SpaceMaxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53874E6029EEF29A00A7CC35 /* SpaceMaxUITestsLaunchTests.swift */; };
 		53874E7329EF065300A7CC35 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 53874E7229EF065300A7CC35 /* Apollo */; };
+		5393205929F0798D002A4D33 /* NextLaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393205829F0798D002A4D33 /* NextLaunchScreen.swift */; };
+		5393205B29F07CB0002A4D33 /* NextLaunchRocketSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393205A29F07CB0002A4D33 /* NextLaunchRocketSpec.swift */; };
+		5393206029F09D08002A4D33 /* Text+SpaceMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393205F29F09D08002A4D33 /* Text+SpaceMax.swift */; };
+		5393206229F0A072002A4D33 /* NextLaunchRocketSpecItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393206129F0A072002A4D33 /* NextLaunchRocketSpecItem.swift */; };
+		5393206629F16035002A4D33 /* NextLaunchCountdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393206529F16035002A4D33 /* NextLaunchCountdown.swift */; };
+		5393206829F16145002A4D33 /* NextLaunchCountdownTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393206729F16145002A4D33 /* NextLaunchCountdownTicker.swift */; };
+		5393206A29F16629002A4D33 /* View+SpaceMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393206929F16629002A4D33 /* View+SpaceMax.swift */; };
+		5393206C29F16D5C002A4D33 /* UINavigationBar+SpaceMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393206B29F16D5C002A4D33 /* UINavigationBar+SpaceMax.swift */; };
+		5393206E29F18D40002A4D33 /* NextLaunchAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393206D29F18D40002A4D33 /* NextLaunchAddress.swift */; };
+		5393207029F19366002A4D33 /* NextLaunchAddressMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393206F29F19366002A4D33 /* NextLaunchAddressMap.swift */; };
+		5393207229F1A020002A4D33 /* NextLaunchWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393207129F1A020002A4D33 /* NextLaunchWeather.swift */; };
+		5393207E29F1B9FC002A4D33 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5393207C29F1B9FC002A4D33 /* Localizable.strings */; };
+		5393208029F1BF9C002A4D33 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5393207F29F1BF9C002A4D33 /* Colors.xcassets */; };
+		5393208229F1F770002A4D33 /* NextLaunchCost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393208129F1F770002A4D33 /* NextLaunchCost.swift */; };
+		5393208829F2B27F002A4D33 /* NextLaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393208729F2B27F002A4D33 /* NextLaunchViewModel.swift */; };
+		5393208A29F53CC1002A4D33 /* String+SpaceMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393208929F53CC1002A4D33 /* String+SpaceMax.swift */; };
+		5393208C29F53EE3002A4D33 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393208B29F53EE3002A4D33 /* LocationManager.swift */; };
+		5393209029F71199002A4D33 /* NextLaunchCountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393208F29F71199002A4D33 /* NextLaunchCountdownTimer.swift */; };
+		5393209329F72987002A4D33 /* AppSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393209229F72987002A4D33 /* AppSpecs.swift */; };
+		5393209629F73EDA002A4D33 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393209529F73EDA002A4D33 /* NetworkRequest.swift */; };
+		5393209929F746BB002A4D33 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393209829F746BB002A4D33 /* Weather.swift */; };
+		5393209B29F746C9002A4D33 /* WeatherResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393209A29F746C9002A4D33 /* WeatherResource.swift */; };
+		539320AB29F82DDA002A4D33 /* String+SpaceMaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539320AA29F82DDA002A4D33 /* String+SpaceMaxTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		53874E5129EEF29900A7CC35 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 53874E3829EEF29800A7CC35 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 53874E3F29EEF29800A7CC35;
-			remoteInfo = SpaceMax;
-		};
-		53874E5B29EEF29A00A7CC35 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 53874E3829EEF29800A7CC35 /* Project object */;
 			proxyType = 1;
@@ -73,10 +86,31 @@
 		53874E4729EEF29900A7CC35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53874E4A29EEF29900A7CC35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		53874E5029EEF29900A7CC35 /* SpaceMaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceMaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		53874E5429EEF29900A7CC35 /* SpaceMaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceMaxTests.swift; sourceTree = "<group>"; };
-		53874E5A29EEF29A00A7CC35 /* SpaceMaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceMaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		53874E5E29EEF29A00A7CC35 /* SpaceMaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceMaxUITests.swift; sourceTree = "<group>"; };
-		53874E6029EEF29A00A7CC35 /* SpaceMaxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceMaxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5393205829F0798D002A4D33 /* NextLaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchScreen.swift; sourceTree = "<group>"; };
+		5393205A29F07CB0002A4D33 /* NextLaunchRocketSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchRocketSpec.swift; sourceTree = "<group>"; };
+		5393205F29F09D08002A4D33 /* Text+SpaceMax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+SpaceMax.swift"; sourceTree = "<group>"; };
+		5393206129F0A072002A4D33 /* NextLaunchRocketSpecItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchRocketSpecItem.swift; sourceTree = "<group>"; };
+		5393206529F16035002A4D33 /* NextLaunchCountdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchCountdown.swift; sourceTree = "<group>"; };
+		5393206729F16145002A4D33 /* NextLaunchCountdownTicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchCountdownTicker.swift; sourceTree = "<group>"; };
+		5393206929F16629002A4D33 /* View+SpaceMax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SpaceMax.swift"; sourceTree = "<group>"; };
+		5393206B29F16D5C002A4D33 /* UINavigationBar+SpaceMax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+SpaceMax.swift"; sourceTree = "<group>"; };
+		5393206D29F18D40002A4D33 /* NextLaunchAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchAddress.swift; sourceTree = "<group>"; };
+		5393206F29F19366002A4D33 /* NextLaunchAddressMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchAddressMap.swift; sourceTree = "<group>"; };
+		5393207129F1A020002A4D33 /* NextLaunchWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchWeather.swift; sourceTree = "<group>"; };
+		5393207D29F1B9FC002A4D33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5393207F29F1BF9C002A4D33 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		5393208129F1F770002A4D33 /* NextLaunchCost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchCost.swift; sourceTree = "<group>"; };
+		5393208729F2B27F002A4D33 /* NextLaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchViewModel.swift; sourceTree = "<group>"; };
+		5393208929F53CC1002A4D33 /* String+SpaceMax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SpaceMax.swift"; sourceTree = "<group>"; };
+		5393208B29F53EE3002A4D33 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5393208F29F71199002A4D33 /* NextLaunchCountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchCountdownTimer.swift; sourceTree = "<group>"; };
+		5393209229F72987002A4D33 /* AppSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSpecs.swift; sourceTree = "<group>"; };
+		5393209529F73EDA002A4D33 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		5393209829F746BB002A4D33 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		5393209A29F746C9002A4D33 /* WeatherResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResource.swift; sourceTree = "<group>"; };
+		5393209E29F7F271002A4D33 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		5393209F29F7F7BD002A4D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		539320AA29F82DDA002A4D33 /* String+SpaceMaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SpaceMaxTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,20 +129,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		53874E5729EEF29A00A7CC35 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		5335E12929EF1A7D00A06BBA /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				5393208E29F702EA002A4D33 /* Managers */,
+				5393208D29F702DD002A4D33 /* Utils */,
+				5393205E29F09CEA002A4D33 /* Design */,
 				5335E12A29EF1A7D00A06BBA /* Networking */,
+				5393207B29F1B9FC002A4D33 /* Localization */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -116,6 +147,7 @@
 		5335E12A29EF1A7D00A06BBA /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				5393209429F73EC7002A4D33 /* REST */,
 				5335E15C29F0432000A06BBA /* GraphQL */,
 			);
 			path = Networking;
@@ -222,7 +254,6 @@
 			children = (
 				53874E4229EEF29800A7CC35 /* SpaceMax */,
 				53874E5329EEF29900A7CC35 /* SpaceMaxTests */,
-				53874E5D29EEF29A00A7CC35 /* SpaceMaxUITests */,
 				53874E4129EEF29800A7CC35 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -232,7 +263,6 @@
 			children = (
 				53874E4029EEF29800A7CC35 /* SpaceMax.app */,
 				53874E5029EEF29900A7CC35 /* SpaceMaxTests.xctest */,
-				53874E5A29EEF29A00A7CC35 /* SpaceMaxUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -242,7 +272,11 @@
 			children = (
 				53874E4329EEF29800A7CC35 /* SpaceMaxApp.swift */,
 				53874E4529EEF29800A7CC35 /* ContentView.swift */,
+				5393209F29F7F7BD002A4D33 /* Info.plist */,
+				5393209E29F7F271002A4D33 /* Config.xcconfig */,
 				53874E4729EEF29900A7CC35 /* Assets.xcassets */,
+				5393207F29F1BF9C002A4D33 /* Colors.xcassets */,
+				5393205529F07950002A4D33 /* Features */,
 				5335E12929EF1A7D00A06BBA /* Core */,
 				53874E4929EEF29900A7CC35 /* Preview Content */,
 			);
@@ -260,18 +294,128 @@
 		53874E5329EEF29900A7CC35 /* SpaceMaxTests */ = {
 			isa = PBXGroup;
 			children = (
-				53874E5429EEF29900A7CC35 /* SpaceMaxTests.swift */,
+				539320A829F82DB4002A4D33 /* Core */,
 			);
 			path = SpaceMaxTests;
 			sourceTree = "<group>";
 		};
-		53874E5D29EEF29A00A7CC35 /* SpaceMaxUITests */ = {
+		5393205529F07950002A4D33 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				53874E5E29EEF29A00A7CC35 /* SpaceMaxUITests.swift */,
-				53874E6029EEF29A00A7CC35 /* SpaceMaxUITestsLaunchTests.swift */,
+				5393205629F07958002A4D33 /* Launches */,
 			);
-			path = SpaceMaxUITests;
+			path = Features;
+			sourceTree = "<group>";
+		};
+		5393205629F07958002A4D33 /* Launches */ = {
+			isa = PBXGroup;
+			children = (
+				5393205729F0797C002A4D33 /* NextLaunch */,
+			);
+			path = Launches;
+			sourceTree = "<group>";
+		};
+		5393205729F0797C002A4D33 /* NextLaunch */ = {
+			isa = PBXGroup;
+			children = (
+				5393208729F2B27F002A4D33 /* NextLaunchViewModel.swift */,
+				5393209129F726E4002A4D33 /* Helpers */,
+				5393206429F15D3F002A4D33 /* Views */,
+			);
+			path = NextLaunch;
+			sourceTree = "<group>";
+		};
+		5393205E29F09CEA002A4D33 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				5393209229F72987002A4D33 /* AppSpecs.swift */,
+				5393205F29F09D08002A4D33 /* Text+SpaceMax.swift */,
+				5393206929F16629002A4D33 /* View+SpaceMax.swift */,
+				5393206B29F16D5C002A4D33 /* UINavigationBar+SpaceMax.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		5393206429F15D3F002A4D33 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5393205829F0798D002A4D33 /* NextLaunchScreen.swift */,
+				5393206529F16035002A4D33 /* NextLaunchCountdown.swift */,
+				5393206729F16145002A4D33 /* NextLaunchCountdownTicker.swift */,
+				5393206D29F18D40002A4D33 /* NextLaunchAddress.swift */,
+				5393206F29F19366002A4D33 /* NextLaunchAddressMap.swift */,
+				5393205A29F07CB0002A4D33 /* NextLaunchRocketSpec.swift */,
+				5393206129F0A072002A4D33 /* NextLaunchRocketSpecItem.swift */,
+				5393207129F1A020002A4D33 /* NextLaunchWeather.swift */,
+				5393208129F1F770002A4D33 /* NextLaunchCost.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5393207B29F1B9FC002A4D33 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				5393207C29F1B9FC002A4D33 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		5393208D29F702DD002A4D33 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5393208929F53CC1002A4D33 /* String+SpaceMax.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5393208E29F702EA002A4D33 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				5393208B29F53EE3002A4D33 /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		5393209129F726E4002A4D33 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5393208F29F71199002A4D33 /* NextLaunchCountdownTimer.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5393209429F73EC7002A4D33 /* REST */ = {
+			isa = PBXGroup;
+			children = (
+				5393209729F746A4002A4D33 /* TomorrowIO */,
+				5393209529F73EDA002A4D33 /* NetworkRequest.swift */,
+			);
+			path = REST;
+			sourceTree = "<group>";
+		};
+		5393209729F746A4002A4D33 /* TomorrowIO */ = {
+			isa = PBXGroup;
+			children = (
+				5393209829F746BB002A4D33 /* Weather.swift */,
+				5393209A29F746C9002A4D33 /* WeatherResource.swift */,
+			);
+			path = TomorrowIO;
+			sourceTree = "<group>";
+		};
+		539320A829F82DB4002A4D33 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				539320A929F82DBB002A4D33 /* Utils */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		539320A929F82DBB002A4D33 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				539320AA29F82DDA002A4D33 /* String+SpaceMaxTests.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,24 +459,6 @@
 			productReference = 53874E5029EEF29900A7CC35 /* SpaceMaxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		53874E5929EEF29A00A7CC35 /* SpaceMaxUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 53874E6A29EEF29A00A7CC35 /* Build configuration list for PBXNativeTarget "SpaceMaxUITests" */;
-			buildPhases = (
-				53874E5629EEF29A00A7CC35 /* Sources */,
-				53874E5729EEF29A00A7CC35 /* Frameworks */,
-				53874E5829EEF29A00A7CC35 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				53874E5C29EEF29A00A7CC35 /* PBXTargetDependency */,
-			);
-			name = SpaceMaxUITests;
-			productName = SpaceMaxUITests;
-			productReference = 53874E5A29EEF29A00A7CC35 /* SpaceMaxUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -347,10 +473,6 @@
 						CreatedOnToolsVersion = 14.3;
 					};
 					53874E4F29EEF29900A7CC35 = {
-						CreatedOnToolsVersion = 14.3;
-						TestTargetID = 53874E3F29EEF29800A7CC35;
-					};
-					53874E5929EEF29A00A7CC35 = {
 						CreatedOnToolsVersion = 14.3;
 						TestTargetID = 53874E3F29EEF29800A7CC35;
 					};
@@ -374,7 +496,6 @@
 			targets = (
 				53874E3F29EEF29800A7CC35 /* SpaceMax */,
 				53874E4F29EEF29900A7CC35 /* SpaceMaxTests */,
-				53874E5929EEF29A00A7CC35 /* SpaceMaxUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -384,21 +505,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5393207E29F1B9FC002A4D33 /* Localizable.strings in Resources */,
 				5335E13A29F0388C00A06BBA /* NextLaunch.graphql in Resources */,
 				53874E4B29EEF29900A7CC35 /* Preview Assets.xcassets in Resources */,
+				5393208029F1BF9C002A4D33 /* Colors.xcassets in Resources */,
 				5335E13229F034C800A06BBA /* schema.graphqls in Resources */,
 				53874E4829EEF29900A7CC35 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		53874E4E29EEF29900A7CC35 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53874E5829EEF29A00A7CC35 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -413,21 +529,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				5353F78729F0745F00182EBE /* SpaceX.graphql.swift in Sources */,
+				5393208829F2B27F002A4D33 /* NextLaunchViewModel.swift in Sources */,
 				5353F78E29F0745F00182EBE /* Query.graphql.swift in Sources */,
+				5393206E29F18D40002A4D33 /* NextLaunchAddress.swift in Sources */,
+				5393207229F1A020002A4D33 /* NextLaunchWeather.swift in Sources */,
 				5353F78C29F0745F00182EBE /* RocketPayloadWeight.graphql.swift in Sources */,
 				5353F78B29F0745F00182EBE /* Distance.graphql.swift in Sources */,
+				5393208C29F53EE3002A4D33 /* LocationManager.swift in Sources */,
+				5393206229F0A072002A4D33 /* NextLaunchRocketSpecItem.swift in Sources */,
 				5353F78829F0745F00182EBE /* Date.swift in Sources */,
+				5393209329F72987002A4D33 /* AppSpecs.swift in Sources */,
+				5393206629F16035002A4D33 /* NextLaunchCountdown.swift in Sources */,
+				5393205929F0798D002A4D33 /* NextLaunchScreen.swift in Sources */,
 				5353F79129F0745F00182EBE /* SchemaConfiguration.swift in Sources */,
 				5353F79229F0745F00182EBE /* SchemaMetadata.graphql.swift in Sources */,
+				5393205B29F07CB0002A4D33 /* NextLaunchRocketSpec.swift in Sources */,
+				5393209B29F746C9002A4D33 /* WeatherResource.swift in Sources */,
+				5393209629F73EDA002A4D33 /* NetworkRequest.swift in Sources */,
+				5393207029F19366002A4D33 /* NextLaunchAddressMap.swift in Sources */,
 				53874E4629EEF29800A7CC35 /* ContentView.swift in Sources */,
+				5393206829F16145002A4D33 /* NextLaunchCountdownTicker.swift in Sources */,
+				5393206A29F16629002A4D33 /* View+SpaceMax.swift in Sources */,
 				5353F79029F0745F00182EBE /* Mass.graphql.swift in Sources */,
 				5353F78629F0745F00182EBE /* NextLaunchQuery.graphql.swift in Sources */,
+				5393209029F71199002A4D33 /* NextLaunchCountdownTimer.swift in Sources */,
+				5393208A29F53CC1002A4D33 /* String+SpaceMax.swift in Sources */,
+				5393208229F1F770002A4D33 /* NextLaunchCost.swift in Sources */,
 				5353F78A29F0745F00182EBE /* Rocket.graphql.swift in Sources */,
 				5353F78929F0745F00182EBE /* Launch.graphql.swift in Sources */,
+				5393206C29F16D5C002A4D33 /* UINavigationBar+SpaceMax.swift in Sources */,
 				5335E17E29F045F900A06BBA /* SpaceXGQL.swift in Sources */,
+				5393206029F09D08002A4D33 /* Text+SpaceMax.swift in Sources */,
 				5353F78F29F0745F00182EBE /* LaunchSite.graphql.swift in Sources */,
 				53874E4429EEF29800A7CC35 /* SpaceMaxApp.swift in Sources */,
 				5353F78D29F0745F00182EBE /* LaunchRocket.graphql.swift in Sources */,
+				5393209929F746BB002A4D33 /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,16 +571,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53874E5529EEF29900A7CC35 /* SpaceMaxTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53874E5629EEF29A00A7CC35 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53874E6129EEF29A00A7CC35 /* SpaceMaxUITestsLaunchTests.swift in Sources */,
-				53874E5F29EEF29A00A7CC35 /* SpaceMaxUITests.swift in Sources */,
+				539320AB29F82DDA002A4D33 /* String+SpaceMaxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,16 +583,23 @@
 			target = 53874E3F29EEF29800A7CC35 /* SpaceMax */;
 			targetProxy = 53874E5129EEF29900A7CC35 /* PBXContainerItemProxy */;
 		};
-		53874E5C29EEF29A00A7CC35 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 53874E3F29EEF29800A7CC35 /* SpaceMax */;
-			targetProxy = 53874E5B29EEF29A00A7CC35 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5393207C29F1B9FC002A4D33 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5393207D29F1B9FC002A4D33 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		53874E6229EEF29A00A7CC35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5393209E29F7F271002A4D33 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -580,6 +714,7 @@
 		};
 		53874E6529EEF29A00A7CC35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5393209E29F7F271002A4D33 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -588,6 +723,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SpaceMax/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpaceMax/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -615,6 +751,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SpaceMax/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpaceMax/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -670,40 +807,6 @@
 			};
 			name = Release;
 		};
-		53874E6B29EEF29A00A7CC35 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.rafaelsrocha.SpaceMaxUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SpaceMax;
-			};
-			name = Debug;
-		};
-		53874E6C29EEF29A00A7CC35 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.rafaelsrocha.SpaceMaxUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SpaceMax;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -730,15 +833,6 @@
 			buildConfigurations = (
 				53874E6829EEF29A00A7CC35 /* Debug */,
 				53874E6929EEF29A00A7CC35 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		53874E6A29EEF29A00A7CC35 /* Build configuration list for PBXNativeTarget "SpaceMaxUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				53874E6B29EEF29A00A7CC35 /* Debug */,
-				53874E6C29EEF29A00A7CC35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

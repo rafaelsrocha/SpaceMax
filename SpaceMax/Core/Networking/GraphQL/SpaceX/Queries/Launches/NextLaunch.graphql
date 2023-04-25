@@ -21,7 +21,7 @@ query NextLaunch {
         payload_weights {
           kg
         }
-        stages
+        cost_per_launch
       }
     }
   }

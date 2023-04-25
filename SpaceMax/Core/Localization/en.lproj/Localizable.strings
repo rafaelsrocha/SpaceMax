@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  SpaceMax
+
+  Created by Rafael Rocha on 20.04.23.
+  
+*/
+
+"next-launch" = "Next Launch";
+"location" = "Location";
+"launch-cost" = "Launch cost";
+"days" = "days";
+"hours" = "hours";
+"minutes" = "minutes";
+"seconds" = "seconds";
