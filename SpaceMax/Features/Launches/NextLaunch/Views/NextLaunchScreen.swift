@@ -50,7 +50,7 @@ struct NextLaunchScreen: View {
                 NextLaunchRocketSpec()
                     .environmentObject(viewModel)
                 VStack {
-                    NextLaunchWeather()
+                    NextLaunchWeather(temperature: viewModel.launchDayTemperature)
                     NextLaunchCost(cost: viewModel.launchCost)
                 }
                 .frame(width: 150)

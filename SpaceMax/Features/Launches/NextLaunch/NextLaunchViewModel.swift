@@ -71,13 +71,16 @@ class NextLaunchViewModel: NextLaunchViewModelProtocol, ObservableObject {
         location: CLLocationCoordinate2D()
     )
     @Published
+    private(set) var launchDayTemperature: Int = 0
+    @Published
     private(set) var anyError: String = ""
 
     /// Queries GraphQL to retrieve NextLaunch's data
     func fetchNextLaunch() async {
         do {
-            let result = try await SpaceXGQL.shared.queryRequest(query: SpaceX.NextLaunchQuery())
-            try await dispatch(data: result.data)
+            async let graphQLResult = SpaceXGQL.shared.queryRequest(query: SpaceX.NextLaunchQuery())
+            async let weatherResult = fetchWeatherInfo()
+            try await dispatch(data: graphQLResult.data, weatherInfo: weatherResult)
         } catch {
             self.anyError = error.localizedDescription
         }
@@ -87,17 +90,25 @@ class NextLaunchViewModel: NextLaunchViewModelProtocol, ObservableObject {
     ///
     /// - Parameters:
     ///   - data: The data retrieved from GrahQL query
-    private func dispatch(data: SpaceX.NextLaunchQuery.Data?) async throws {
-        guard let nextLaunch: NextLaunchData = data?.launchNext else {
+    private func dispatch(data: SpaceX.NextLaunchQuery.Data?, weatherInfo: Weather?) async throws {
+        guard
+            let nextLaunch: NextLaunchData = data?.launchNext,
+            let weather: Weather = weatherInfo
+        else {
             throw NSError(
-                domain: "NextLaunchViewModel#dispatch: Malformed GraphQL response",
+                domain: "NextLaunchViewModel#dispatch: Malformed server response",
                 code: -1,
-                userInfo: ["response.data": data ?? "nil"]
+                userInfo: [
+                    "response.data": data ?? "nil",
+                    "weatherInfo": weatherInfo ?? "nil"
+                ]
             )
         }
 
         // Mission name
         missionName = nextLaunch.mission_name ?? "–"
+        // Launch day temperature
+        launchDayTemperature = Int(weather.data.values.temperature)
 
         // Cost per launch
         let formatter = NumberFormatter()
@@ -162,10 +173,6 @@ class NextLaunchViewModel: NextLaunchViewModelProtocol, ObservableObject {
         }
 
         return NextLaunchCountdownData(days: days, hours: hours, minutes: minutes, seconds: seconds)
-    }
-
-    private func startCountdownTimer() {
-
     }
 
     /// Parses the Rocket date to NextLaunchRocketSpecData.
@@ -248,5 +255,11 @@ class NextLaunchViewModel: NextLaunchViewModelProtocol, ObservableObject {
             address: address.joined(separator: ", "),
             location: CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         )
+    }
+
+    func fetchWeatherInfo() async throws -> Weather? {
+        // Also hardcoded given the explanation on line 138
+        let resource: WeatherResource = WeatherResource(latitude: 28.49834, longitude: -80.57366)
+        return try await NetworkRequest.default.fetch(resource: resource)
     }
 }
