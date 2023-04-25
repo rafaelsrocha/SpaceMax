@@ -14,7 +14,7 @@ struct NextLaunchAddress: View {
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
-                Text("Location").smText(.title3)
+                Text("location").smText(.title3)
                 Spacer()
                 Text(viewModel.addressData.name)
                     .smText(.headline)

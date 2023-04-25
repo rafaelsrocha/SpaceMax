@@ -12,7 +12,7 @@ struct NextLaunchCost: View {
 
     var body: some View {
         VStack {
-            Text("Launch cost")
+            Text("launch-cost")
                 .smText(.headline)
             Text(cost)
                 .smText()
