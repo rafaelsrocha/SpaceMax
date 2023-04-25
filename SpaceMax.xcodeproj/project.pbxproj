@@ -27,9 +27,6 @@
 		53874E4629EEF29800A7CC35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53874E4529EEF29800A7CC35 /* ContentView.swift */; };
 		53874E4829EEF29900A7CC35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53874E4729EEF29900A7CC35 /* Assets.xcassets */; };
 		53874E4B29EEF29900A7CC35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53874E4A29EEF29900A7CC35 /* Preview Assets.xcassets */; };
-		53874E5529EEF29900A7CC35 /* SpaceMaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53874E5429EEF29900A7CC35 /* SpaceMaxTests.swift */; };
-		53874E5F29EEF29A00A7CC35 /* SpaceMaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53874E5E29EEF29A00A7CC35 /* SpaceMaxUITests.swift */; };
-		53874E6129EEF29A00A7CC35 /* SpaceMaxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53874E6029EEF29A00A7CC35 /* SpaceMaxUITestsLaunchTests.swift */; };
 		53874E7329EF065300A7CC35 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 53874E7229EF065300A7CC35 /* Apollo */; };
 		5393205929F0798D002A4D33 /* NextLaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393205829F0798D002A4D33 /* NextLaunchScreen.swift */; };
 		5393205B29F07CB0002A4D33 /* NextLaunchRocketSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393205A29F07CB0002A4D33 /* NextLaunchRocketSpec.swift */; };
@@ -53,17 +50,11 @@
 		5393209629F73EDA002A4D33 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393209529F73EDA002A4D33 /* NetworkRequest.swift */; };
 		5393209929F746BB002A4D33 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393209829F746BB002A4D33 /* Weather.swift */; };
 		5393209B29F746C9002A4D33 /* WeatherResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393209A29F746C9002A4D33 /* WeatherResource.swift */; };
+		539320AB29F82DDA002A4D33 /* String+SpaceMaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539320AA29F82DDA002A4D33 /* String+SpaceMaxTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		53874E5129EEF29900A7CC35 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 53874E3829EEF29800A7CC35 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 53874E3F29EEF29800A7CC35;
-			remoteInfo = SpaceMax;
-		};
-		53874E5B29EEF29A00A7CC35 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 53874E3829EEF29800A7CC35 /* Project object */;
 			proxyType = 1;
@@ -95,10 +86,6 @@
 		53874E4729EEF29900A7CC35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53874E4A29EEF29900A7CC35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		53874E5029EEF29900A7CC35 /* SpaceMaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceMaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		53874E5429EEF29900A7CC35 /* SpaceMaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceMaxTests.swift; sourceTree = "<group>"; };
-		53874E5A29EEF29A00A7CC35 /* SpaceMaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceMaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		53874E5E29EEF29A00A7CC35 /* SpaceMaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceMaxUITests.swift; sourceTree = "<group>"; };
-		53874E6029EEF29A00A7CC35 /* SpaceMaxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceMaxUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5393205829F0798D002A4D33 /* NextLaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchScreen.swift; sourceTree = "<group>"; };
 		5393205A29F07CB0002A4D33 /* NextLaunchRocketSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchRocketSpec.swift; sourceTree = "<group>"; };
 		5393205F29F09D08002A4D33 /* Text+SpaceMax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+SpaceMax.swift"; sourceTree = "<group>"; };
@@ -123,6 +110,7 @@
 		5393209A29F746C9002A4D33 /* WeatherResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResource.swift; sourceTree = "<group>"; };
 		5393209E29F7F271002A4D33 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		5393209F29F7F7BD002A4D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		539320AA29F82DDA002A4D33 /* String+SpaceMaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SpaceMaxTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,13 +123,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		53874E4D29EEF29900A7CC35 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53874E5729EEF29A00A7CC35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -273,7 +254,6 @@
 			children = (
 				53874E4229EEF29800A7CC35 /* SpaceMax */,
 				53874E5329EEF29900A7CC35 /* SpaceMaxTests */,
-				53874E5D29EEF29A00A7CC35 /* SpaceMaxUITests */,
 				53874E4129EEF29800A7CC35 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -283,7 +263,6 @@
 			children = (
 				53874E4029EEF29800A7CC35 /* SpaceMax.app */,
 				53874E5029EEF29900A7CC35 /* SpaceMaxTests.xctest */,
-				53874E5A29EEF29A00A7CC35 /* SpaceMaxUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -315,18 +294,9 @@
 		53874E5329EEF29900A7CC35 /* SpaceMaxTests */ = {
 			isa = PBXGroup;
 			children = (
-				53874E5429EEF29900A7CC35 /* SpaceMaxTests.swift */,
+				539320A829F82DB4002A4D33 /* Core */,
 			);
 			path = SpaceMaxTests;
-			sourceTree = "<group>";
-		};
-		53874E5D29EEF29A00A7CC35 /* SpaceMaxUITests */ = {
-			isa = PBXGroup;
-			children = (
-				53874E5E29EEF29A00A7CC35 /* SpaceMaxUITests.swift */,
-				53874E6029EEF29A00A7CC35 /* SpaceMaxUITestsLaunchTests.swift */,
-			);
-			path = SpaceMaxUITests;
 			sourceTree = "<group>";
 		};
 		5393205529F07950002A4D33 /* Features */ = {
@@ -432,6 +402,22 @@
 			path = TomorrowIO;
 			sourceTree = "<group>";
 		};
+		539320A829F82DB4002A4D33 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				539320A929F82DBB002A4D33 /* Utils */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		539320A929F82DBB002A4D33 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				539320AA29F82DDA002A4D33 /* String+SpaceMaxTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -473,24 +459,6 @@
 			productReference = 53874E5029EEF29900A7CC35 /* SpaceMaxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		53874E5929EEF29A00A7CC35 /* SpaceMaxUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 53874E6A29EEF29A00A7CC35 /* Build configuration list for PBXNativeTarget "SpaceMaxUITests" */;
-			buildPhases = (
-				53874E5629EEF29A00A7CC35 /* Sources */,
-				53874E5729EEF29A00A7CC35 /* Frameworks */,
-				53874E5829EEF29A00A7CC35 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				53874E5C29EEF29A00A7CC35 /* PBXTargetDependency */,
-			);
-			name = SpaceMaxUITests;
-			productName = SpaceMaxUITests;
-			productReference = 53874E5A29EEF29A00A7CC35 /* SpaceMaxUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -505,10 +473,6 @@
 						CreatedOnToolsVersion = 14.3;
 					};
 					53874E4F29EEF29900A7CC35 = {
-						CreatedOnToolsVersion = 14.3;
-						TestTargetID = 53874E3F29EEF29800A7CC35;
-					};
-					53874E5929EEF29A00A7CC35 = {
 						CreatedOnToolsVersion = 14.3;
 						TestTargetID = 53874E3F29EEF29800A7CC35;
 					};
@@ -532,7 +496,6 @@
 			targets = (
 				53874E3F29EEF29800A7CC35 /* SpaceMax */,
 				53874E4F29EEF29900A7CC35 /* SpaceMaxTests */,
-				53874E5929EEF29A00A7CC35 /* SpaceMaxUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -552,13 +515,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		53874E4E29EEF29900A7CC35 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53874E5829EEF29A00A7CC35 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -615,16 +571,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53874E5529EEF29900A7CC35 /* SpaceMaxTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53874E5629EEF29A00A7CC35 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53874E6129EEF29A00A7CC35 /* SpaceMaxUITestsLaunchTests.swift in Sources */,
-				53874E5F29EEF29A00A7CC35 /* SpaceMaxUITests.swift in Sources */,
+				539320AB29F82DDA002A4D33 /* String+SpaceMaxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,11 +582,6 @@
 			isa = PBXTargetDependency;
 			target = 53874E3F29EEF29800A7CC35 /* SpaceMax */;
 			targetProxy = 53874E5129EEF29900A7CC35 /* PBXContainerItemProxy */;
-		};
-		53874E5C29EEF29A00A7CC35 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 53874E3F29EEF29800A7CC35 /* SpaceMax */;
-			targetProxy = 53874E5B29EEF29A00A7CC35 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -865,40 +807,6 @@
 			};
 			name = Release;
 		};
-		53874E6B29EEF29A00A7CC35 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.rafaelsrocha.SpaceMaxUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SpaceMax;
-			};
-			name = Debug;
-		};
-		53874E6C29EEF29A00A7CC35 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.rafaelsrocha.SpaceMaxUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SpaceMax;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -925,15 +833,6 @@
 			buildConfigurations = (
 				53874E6829EEF29A00A7CC35 /* Debug */,
 				53874E6929EEF29A00A7CC35 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		53874E6A29EEF29A00A7CC35 /* Build configuration list for PBXNativeTarget "SpaceMaxUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				53874E6B29EEF29A00A7CC35 /* Debug */,
-				53874E6C29EEF29A00A7CC35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
