@@ -10,7 +10,7 @@ import Foundation
 /// Gather SpaceMax shared view specs.
 struct AppSpecs {
     /// Cards/sections corner radius.
-    static let sectionCornerRadius: Float = 16
-    
+    static let sectionCornerRadius: CGFloat = 16
+
     private init() {}
 }
