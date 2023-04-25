@@ -8,10 +8,13 @@
 import Foundation
 
 extension String {
-    /// Formats the date string to Date components and computes its difference to the current Date.
+    /// Formats the date string to Date components and computes its difference to the provided Date.
+    ///
+    /// - Parameters:
+    ///   - fromDate: The Date to be the initial point to be compared to.
     ///
     /// - Returns: the date components to count down to the Launch date.
-    public func toLaunchDateComponents() throws -> DateComponents {
+    public func parseDateComponents(from fromDate: Date) throws -> DateComponents {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
         guard let formattedLaunchDate = formatter.date(from: self) else {
@@ -43,7 +46,7 @@ extension String {
 
         return Calendar.current.dateComponents(
             [.day, .hour, .minute, .second],
-            from: Date(),
+            from: fromDate,
             to: futureLaunchDate
         )
     }

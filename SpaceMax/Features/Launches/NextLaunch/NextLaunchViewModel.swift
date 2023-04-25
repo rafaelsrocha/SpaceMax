@@ -119,7 +119,7 @@ class NextLaunchViewModel: NextLaunchViewModelProtocol, ObservableObject {
 
         // Countdown data
         if let launchDate = nextLaunch.launch_date_utc {
-            let countdownComponents: DateComponents = try launchDate.toLaunchDateComponents()
+            let countdownComponents: DateComponents = try launchDate.parseDateComponents(from: Date())
             countdownData = parseCountdownData(fromComponents: countdownComponents)
 
             if countdownTimer == nil {
